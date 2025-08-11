@@ -3,35 +3,16 @@ import { motion } from "framer-motion";
 export default function FoodList({ items, onSelectFood }) {
     if (!items.length) return <p>No food items found.</p>;
 
-    // Container controls staggered children animations
-    const containerVariants = {
-        hidden: {},
-        visible: {
-            transition: {
-                staggerChildren: 0.15,
-            },
-        },
-    };
-
-    const cardVariants = {
-        hidden: { opacity: 0, y: 30 },
-        visible: {
-            opacity: 1,
-            y: 0,
-            transition: { duration: 0.5, ease: "easeInOut" },
-        },
-    };
-
     return (
         <motion.div
             className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2 gap-6"
-            variants={containerVariants}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.3 }}
+            initial={{ scale: 0.9, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            exit={{ scale: 0.9, opacity: 0 }}
+            transition={{ duration: 0.4, ease: "easeOut" }}
         >
             {items.map((item) => (
-                <motion.div
+                <div
                     key={item.id}
                     onClick={() => onSelectFood(item)}
                     className="cursor-pointer rounded-2xl overflow-hidden shadow-md bg-white transform transition-transform duration-300 hover:scale-95 hover:shadow-xl"
@@ -40,7 +21,6 @@ export default function FoodList({ items, onSelectFood }) {
                     onKeyDown={(e) => {
                         if (e.key === "Enter") onSelectFood(item);
                     }}
-                    variants={cardVariants}
                 >
                     <img
                         src={item.image}
@@ -51,7 +31,7 @@ export default function FoodList({ items, onSelectFood }) {
                         <h3 className="font-semibold text-lg mb-1">{item.name}</h3>
                         <p className="text-gray-600 mb-2">Rs.{item.price.toFixed(2)}</p>
                     </div>
-                </motion.div>
+                </div>
             ))}
         </motion.div>
     );
