@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import './App.css';
 import Header from "./left_side/Header.jsx";
@@ -12,7 +11,7 @@ function Menu() {
     const [searchTerm, setSearchTerm] = useState("");
     const [selectedCategory, setSelectedCategory] = useState(null);
     const [selectedFood, setSelectedFood] = useState(null);
-    const [view, setView] = useState("categories"); // categories, foods, details, restaurant
+    const [view, setView] = useState("categories");
     const [showMenu, setShowMenu] = useState(false);
 
     const allFoods = foodMenu.flatMap(cat =>
@@ -27,16 +26,11 @@ function Menu() {
         ? foodMenu.find(cat => cat.categoryId === selectedCategory)?.items || []
         : [];
 
-    // Push state to browser history whenever relevant state changes
-    useEffect(() => {
-        const state = { view, selectedCategory, selectedFood, showMenu, searchTerm };
-        window.history.pushState(state, "");
-    }, [view, selectedCategory, selectedFood, showMenu, searchTerm]);
-
-    // Listen for back/forward browser button
+    // This useEffect is now solely for listening to the browser's back button
     useEffect(() => {
         const onPopState = (event) => {
             if (event.state) {
+                // If a state exists, update the component's state
                 setView(event.state.view || "categories");
                 setSelectedCategory(event.state.selectedCategory || null);
                 setSelectedFood(event.state.selectedFood || null);
@@ -68,15 +62,20 @@ function Menu() {
         setSearchTerm("");
         setShowMenu(false);
         setView("foods");
+
+        // Manually push a new history state when a new category is selected
+        window.history.pushState({ view: "foods", selectedCategory: catId }, "");
     };
 
     const handleFoodClick = (food) => {
         setSelectedFood(food);
         setShowMenu(false);
         setView("details");
+
+        // Manually push a new history state when a food item is selected
+        window.history.pushState({ view: "details", selectedFood: food }, "");
     };
 
-    // Corrected back button handlers to set state directly
     const handleBackToFoods = () => {
         setSelectedFood(null);
         setView("foods");

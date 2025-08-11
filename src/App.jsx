@@ -1,22 +1,20 @@
 import { useEffect, useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence, useReducedMotion } from "framer-motion"; // <-- Import useReducedMotion
 import Menu from "./Menu";
 import Logo from "./left_side/Logo.jsx";
 import 'aos/dist/aos.css';
 import AOS from 'aos';
 
-
-
 export default function App() {
-    const [showIntro, setShowIntro] = useState(true); // start with true to show intro initially
-
+    const [showIntro, setShowIntro] = useState(true);
+    const shouldReduceMotion = useReducedMotion(); // <-- Call the hook
 
     useEffect(() => {
-        AOS.init({ duration: 600, once: true }); // fade effect duration 600ms, runs once
+        AOS.init({ duration: 600, once: true });
 
         function onLoad() {
             setShowIntro(true);
-            setTimeout(() => setShowIntro(false), 1000); // hide intro after 3.5s
+            setTimeout(() => setShowIntro(false), 1000);
         }
 
         if (document.readyState === "complete") {
@@ -27,7 +25,6 @@ export default function App() {
         }
     }, []);
 
-    // Disable scrolling when intro is visible
     useEffect(() => {
         if (showIntro) {
             document.body.style.overflow = "hidden";
@@ -50,17 +47,23 @@ export default function App() {
         },
     };
 
-    const letterVariants = {
-        hidden: { y: 20, opacity: 0 },
-        visible: {
-            y: [20, -8, 0],
-            opacity: 1,
-            transition: {
-                duration: 0.5,
-                ease: "easeOut",
+    // Use simpler variants for reduced motion
+    const letterVariants = shouldReduceMotion
+        ? {
+            hidden: { opacity: 0 },
+            visible: { opacity: 1, transition: { duration: 0.3 } },
+        }
+        : {
+            hidden: { y: 20, opacity: 0 },
+            visible: {
+                y: [20, -8, 0],
+                opacity: 1,
+                transition: {
+                    duration: 0.5,
+                    ease: "easeOut",
+                },
             },
-        },
-    };
+        };
 
     return (
         <div className="relative min-h-screen bg-red-50 overflow-hidden">
@@ -69,7 +72,7 @@ export default function App() {
                     <motion.div
                         className="fixed inset-0 flex items-center justify-center z-50 px-4 bg-red-100"
                         initial={{ y: 0, opacity: 1 }}
-                        animate={{ y: "-100%", opacity: 0 }}
+                        animate={{ y: shouldReduceMotion ? 0 : "-100%", opacity: 0 }} // <-- Conditionally animate
                         exit={{ y: "-100%", opacity: 0 }}
                         transition={{ duration: 1, ease: "easeInOut", delay: 2 }}
                     >
@@ -102,8 +105,6 @@ export default function App() {
                     </motion.div>
                 )}
             </AnimatePresence>
-
-            {/* Show Menu only after intro disappears */}
             {!showIntro && <Menu />}
         </div>
     );
