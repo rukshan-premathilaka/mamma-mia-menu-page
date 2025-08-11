@@ -18,7 +18,7 @@ export default function Category({ categories, selectedCategory, onSelectCategor
                         alt={cat.categoryName}
                         className="w-full h-50 object-cover"
                     />
-                    <div className="p-3 bg-white text-center font-semibold text-lg hover:bg-red-100">
+                    <div className="p-3 bg-white text-center font-semibold text-lg ">
                         {cat.categoryName}
                     </div>
                 </div>

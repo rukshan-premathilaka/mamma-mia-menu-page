@@ -77,7 +77,7 @@ function App() {
     };
 
     return (
-        <div className="w-full h-screen flex flex-col md:flex-row">
+        <div className="w-full h-screen flex flex-col md:flex-row ">
 
             {/* Left Side - Fixed */}
             <div className="w-full md:w-1/2 h-full bg-red-500 flex items-center justify-center p-4">
