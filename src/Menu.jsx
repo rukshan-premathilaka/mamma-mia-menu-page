@@ -88,7 +88,7 @@ function App() {
             <div className="w-full md:w-1/2  flex flex-col">
 
                 {/* Search bar + Menu button */}
-                <div className="flex items-center gap-3 mb-6 p-4">
+                <div className="flex flex-col sm:flex-row items-center gap-3  p-4">
                     <input
                         type="text"
                         placeholder="Search food..."
@@ -96,18 +96,23 @@ function App() {
                         onChange={handleSearchChange}
                         disabled={showMenu}
                         className="
+
                                       flex-grow
-                                      py-3
-                                      px-6
+                                      py-4
+                                      px-8
                                       border
                                       border-gray-300
                                       rounded-full
                                       shadow-sm
-                                      placeholder-gray-400
+                                      placeholder-gray-500
                                       focus:outline-none
                                       focus:ring-2
                                       focus:ring-red-400
                                       focus:border-red-600
+                                      w-full
+                                      sm:w-auto
+                                      md:w-1/2
+                                      lg:w-1/3
                                       transition
                                       duration-300
                                     "
@@ -117,10 +122,10 @@ function App() {
                         disabled={showMenu}
                         aria-label="Show restaurant menu"
                         className="
-                                      px-5
-                                      py-3
-                                      bg-gray-200
-                                      text-gray-700
+                                      px-8
+                                      py-4
+                                      bg-gray-800
+                                      text-gray-200
                                       font-bold
                                       rounded-full
                                       hover:bg-red-600
