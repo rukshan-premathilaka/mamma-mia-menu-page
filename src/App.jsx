@@ -85,10 +85,10 @@ function App() {
             </div>
 
             {/* Right Side */}
-            <div className="w-full md:w-1/2 p-4 flex flex-col">
+            <div className="w-full md:w-1/2  flex flex-col">
 
                 {/* Search bar + Menu button */}
-                <div className="flex items-center gap-3 mb-6">
+                <div className="flex items-center gap-3 mb-6 m-4">
                     <input
                         type="text"
                         placeholder="Search food..."
@@ -139,7 +139,7 @@ function App() {
 
 
                 {/* Main content area */}
-                <div className="flex-1 overflow-auto">
+                <div className="flex-1 overflow-auto m-4">
 
                     {view === "categories" && !showMenu && (
                         <Category
