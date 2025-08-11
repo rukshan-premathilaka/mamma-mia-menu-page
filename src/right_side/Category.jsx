@@ -6,7 +6,7 @@ export default function Category({ categories, selectedCategory, onSelectCategor
                     key={cat.categoryId}
                     onClick={() => onSelectCategory(cat.categoryId)}
                     className={`cursor-pointer rounded-lg overflow-hidden shadow-md transform transition-transform duration-300
-            hover:scale-105 hover:shadow-xl
+            hover:scale-95 hover:shadow-xl
             ${cat.categoryId === selectedCategory ? "ring-4 ring-blue-400" : ""}
           `}
                     role="button"
@@ -16,9 +16,9 @@ export default function Category({ categories, selectedCategory, onSelectCategor
                     <img
                         src={cat.categoryImage}
                         alt={cat.categoryName}
-                        className="w-full h-32 object-cover"
+                        className="w-full h-50 object-cover"
                     />
-                    <div className="p-3 bg-white text-center font-semibold text-lg">
+                    <div className="p-3 bg-white text-center font-semibold text-lg hover:bg-red-100">
                         {cat.categoryName}
                     </div>
                 </div>
