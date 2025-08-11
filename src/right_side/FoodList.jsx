@@ -3,13 +3,33 @@ import { motion } from "framer-motion";
 export default function FoodList({ items, onSelectFood }) {
     if (!items.length) return <p>No food items found.</p>;
 
+    // Container controls staggered children animations
+    const containerVariants = {
+        hidden: {},
+        visible: {
+            transition: {
+                staggerChildren: 0.15,
+            },
+        },
+    };
+
     const cardVariants = {
         hidden: { opacity: 0, y: 30 },
-        visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+        visible: {
+            opacity: 1,
+            y: 0,
+            transition: { duration: 0.5, ease: "easeInOut" },
+        },
     };
 
     return (
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2 gap-6">
+        <motion.div
+            className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2 gap-6"
+            variants={containerVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3 }}
+        >
             {items.map((item) => (
                 <motion.div
                     key={item.id}
@@ -20,9 +40,6 @@ export default function FoodList({ items, onSelectFood }) {
                     onKeyDown={(e) => {
                         if (e.key === "Enter") onSelectFood(item);
                     }}
-                    initial="hidden"
-                    whileInView="visible"
-                    viewport={{ once: true, amount: 0.3 }}
                     variants={cardVariants}
                 >
                     <img
@@ -36,6 +53,6 @@ export default function FoodList({ items, onSelectFood }) {
                     </div>
                 </motion.div>
             ))}
-        </div>
+        </motion.div>
     );
 }
