@@ -1,12 +1,11 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './App.css';
 import Header from "./left_side/Header.jsx";
 import foodMenu from './right_side/foodMenuData.js';
 import Category from "./right_side/Category.jsx";
 import FoodList from "./right_side/FoodList.jsx";
 import FoodDetails from "./right_side/FoodDetails.jsx";
-import RestaurantDetails from "./right_side/RestaurantDetails.jsx"; // import this component
-import {  } from 'react-icons/fa';
+import RestaurantDetails from "./right_side/RestaurantDetails.jsx";
 
 function Menu() {
     const [searchTerm, setSearchTerm] = useState("");
@@ -26,6 +25,27 @@ function Menu() {
     const displayedFoods = searchTerm ? searchResults : selectedCategory
         ? foodMenu.find(cat => cat.categoryId === selectedCategory)?.items || []
         : [];
+
+    // Push state to browser history whenever relevant state changes
+    useEffect(() => {
+        const state = { view, selectedCategory, selectedFood, showMenu, searchTerm };
+        window.history.pushState(state, "");
+    }, [view, selectedCategory, selectedFood, showMenu, searchTerm]);
+
+    // Listen for back/forward browser button
+    useEffect(() => {
+        const onPopState = (event) => {
+            if (event.state) {
+                setView(event.state.view || "categories");
+                setSelectedCategory(event.state.selectedCategory || null);
+                setSelectedFood(event.state.selectedFood || null);
+                setShowMenu(event.state.showMenu || false);
+                setSearchTerm(event.state.searchTerm || "");
+            }
+        };
+        window.addEventListener("popstate", onPopState);
+        return () => window.removeEventListener("popstate", onPopState);
+    }, []);
 
     const handleSearchChange = (e) => {
         const val = e.target.value;
@@ -55,17 +75,13 @@ function Menu() {
         setView("details");
     };
 
+    // Instead of directly changing state, use browser history back to keep sync
     const handleBackToFoods = () => {
-        setSelectedFood(null);
-        setShowMenu(false);
-        setView("foods");
+        window.history.back();
     };
 
     const handleBackToCategories = () => {
-        setSelectedCategory(null);
-        setSearchTerm("");
-        setShowMenu(false);
-        setView("categories");
+        window.history.back();
     };
 
     const handleShowMenu = () => {
@@ -79,17 +95,16 @@ function Menu() {
     return (
         <div className="w-full h-screen flex flex-col md:flex-row font-['Inter'] overflow-x-hidden">
 
-
-        {/* Left Side - Fixed */}
+            {/* Left Side - Fixed */}
             <div className="w-full md:w-1/2 h-full bg-red-500 flex items-center justify-center p-4">
                 <Header />
             </div>
 
             {/* Right Side */}
-            <div className="w-full md:w-1/2  flex flex-col">
+            <div className="w-full md:w-1/2 flex flex-col">
 
                 {/* Search bar + Menu button */}
-                <div className="flex flex-col sm:flex-row items-center gap-3  p-4">
+                <div className="flex flex-col sm:flex-row items-center gap-3 p-4">
                     <input
                         type="text"
                         placeholder="Search food..."
@@ -97,54 +112,52 @@ function Menu() {
                         onChange={handleSearchChange}
                         disabled={showMenu}
                         className="
-
-                                      flex-grow
-                                      py-4
-                                      px-8
-                                      border
-                                      border-gray-300
-                                      rounded-full
-                                      shadow-sm
-                                      placeholder-gray-500
-                                      focus:outline-none
-                                      focus:ring-2
-                                      focus:ring-red-400
-                                      focus:border-red-600
-                                      w-full
-                                      sm:w-auto
-                                      md:w-1/2
-                                      lg:w-1/3
-                                      transition
-                                      duration-300
-                                    "
+                          flex-grow
+                          py-4
+                          px-8
+                          border
+                          border-gray-300
+                          rounded-full
+                          shadow-sm
+                          placeholder-gray-500
+                          focus:outline-none
+                          focus:ring-2
+                          focus:ring-red-400
+                          focus:border-red-600
+                          w-full
+                          sm:w-auto
+                          md:w-1/2
+                          lg:w-1/3
+                          transition
+                          duration-300
+                        "
                     />
                     <button
                         onClick={handleShowMenu}
                         disabled={showMenu}
                         aria-label="Show restaurant menu"
                         className="
-                                      px-8
-                                      py-4
-                                      bg-gray-800
-                                      text-gray-200
-                                      font-bold
-                                      rounded-full
-                                      hover:bg-red-600
-                                      hover:text-white
-                                      transition-colors
-                                      duration-300
-                                      cursor-pointer
-                                      disabled:opacity-50
-                                      disabled:cursor-not-allowed
-                                      focus:outline-none
-                                      focus:ring-2
-                                      focus:ring-red-400
-                                    "
+                          px-8
+                          py-4
+                          bg-gray-800
+                          text-gray-200
+                          font-bold
+                          rounded-full
+                          hover:bg-red-600
+                          hover:text-white
+                          transition-colors
+                          duration-300
+                          cursor-pointer
+                          disabled:opacity-50
+                          disabled:cursor-not-allowed
+                          focus:outline-none
+                          focus:ring-2
+                          focus:ring-red-400
+                        "
                     >
                         Contact Us
                     </button>
                 </div>
-
 
                 {/* Main content area */}
                 <div className="flex-1 overflow-auto p-4">
@@ -181,7 +194,7 @@ function Menu() {
                         <>
                             <button
                                 onClick={handleBackToFoods}
-                                className="mb-4 px-4 py-2 bg-gray-200 rounded-4xl hover:bg-gray-300 cursor-pointer "
+                                className="mb-4 px-4 py-2 bg-gray-200 rounded-4xl hover:bg-gray-300 cursor-pointer"
                             >
                                 ← Back to {searchTerm ? "Search Results" : "Food Items"}
                             </button>

@@ -1,4 +1,5 @@
 import { FaShareAlt } from 'react-icons/fa';
+import { motion } from 'framer-motion';
 
 export default function FoodDetails({ food }) {
     const handleShare = () => {
@@ -17,7 +18,13 @@ export default function FoodDetails({ food }) {
     };
 
     return (
-        <div className="max-w-3xl mx-auto bg-white rounded-2xl shadow-xl overflow-hidden ">
+        <motion.div
+            className="max-w-3xl mx-auto bg-white rounded-2xl shadow-xl overflow-hidden"
+            initial={{ scale: 0.9, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            exit={{ scale: 0.9, opacity: 0 }}
+            transition={{ duration: 0.4, ease: "easeOut" }}
+        >
             <img
                 src={food.image}
                 alt={food.name}
@@ -40,6 +47,6 @@ export default function FoodDetails({ food }) {
                     <span className="text-xl font-semibold">Share</span>
                 </button>
             </div>
-        </div>
+        </motion.div>
     );
 }

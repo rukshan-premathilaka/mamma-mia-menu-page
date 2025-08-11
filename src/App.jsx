@@ -20,6 +20,18 @@ export default function App() {
         }
     }, []);
 
+    // Disable body scroll while intro visible
+    useEffect(() => {
+        if (showIntro) {
+            document.body.style.overflow = "hidden";
+        } else {
+            document.body.style.overflow = "";
+        }
+        return () => {
+            document.body.style.overflow = "";
+        };
+    }, [showIntro]);
+
     const containerVariants = {
         hidden: { opacity: 0 },
         visible: {
@@ -48,8 +60,8 @@ export default function App() {
                 {showIntro && (
                     <motion.div
                         className="fixed inset-0 flex items-center justify-center z-50 px-4 bg-red-100"
-                        initial={{ y: 0, opacity: 1 }}    // background visible immediately
-                        animate={{ y: "-100%", opacity: 0 }} // slide up + fade out at end
+                        initial={{ y: 0, opacity: 1 }}
+                        animate={{ y: "-100%", opacity: 0 }}
                         exit={{ y: "-100%", opacity: 0 }}
                         transition={{ duration: 1, ease: "easeInOut", delay: 2 }}
                     >
