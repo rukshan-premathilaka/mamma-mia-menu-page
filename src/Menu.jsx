@@ -8,7 +8,7 @@ import FoodDetails from "./right_side/FoodDetails.jsx";
 import RestaurantDetails from "./right_side/RestaurantDetails.jsx"; // import this component
 import {  } from 'react-icons/fa';
 
-function App() {
+function Menu() {
     const [searchTerm, setSearchTerm] = useState("");
     const [selectedCategory, setSelectedCategory] = useState(null);
     const [selectedFood, setSelectedFood] = useState(null);
@@ -207,4 +207,4 @@ function App() {
     );
 }
 
-export default App;
+export default Menu;
