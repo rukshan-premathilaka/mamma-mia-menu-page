@@ -4,12 +4,12 @@ import Menu from "./Menu";
 import Logo from "./left_side/Logo.jsx";
 
 export default function App() {
-    const [showIntro, setShowIntro] = useState(false);
+    const [showIntro, setShowIntro] = useState(true); // start with true to show intro initially
 
     useEffect(() => {
         function onLoad() {
             setShowIntro(true);
-            setTimeout(() => setShowIntro(false), 3500);
+            setTimeout(() => setShowIntro(false), 1000); // hide intro after 3.5s
         }
 
         if (document.readyState === "complete") {
@@ -20,7 +20,7 @@ export default function App() {
         }
     }, []);
 
-    // Disable body scroll while intro visible
+    // Disable scrolling when intro is visible
     useEffect(() => {
         if (showIntro) {
             document.body.style.overflow = "hidden";
@@ -32,6 +32,7 @@ export default function App() {
         };
     }, [showIntro]);
 
+    // Animation variants for intro letters
     const containerVariants = {
         hidden: { opacity: 0 },
         visible: {
@@ -80,7 +81,7 @@ export default function App() {
                                 <Logo />
                             </motion.div>
                             <motion.h1 className="text-red-600 text-3xl sm:text-5xl font-bold">
-                                { "Welcome to Mamma Mia Restaurant".split("").map((char, i) => (
+                                {"Welcome to Mamma Mia Restaurant".split("").map((char, i) => (
                                     <motion.span
                                         key={i}
                                         variants={letterVariants}
@@ -88,15 +89,15 @@ export default function App() {
                                     >
                                         {char === " " ? "\u00A0" : char}
                                     </motion.span>
-                                )) }
+                                ))}
                             </motion.h1>
                         </motion.div>
                     </motion.div>
                 )}
             </AnimatePresence>
 
-            {/* Main content */}
-            <Menu />
+            {/* Show Menu only after intro disappears */}
+            {!showIntro && <Menu />}
         </div>
     );
 }
