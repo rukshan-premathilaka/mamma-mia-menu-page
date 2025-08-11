@@ -283,7 +283,7 @@ const foodMenu = [
                 id: 34,
                 name: "Egg Sandwich",
                 image: Image,
-                price: 450.00,
+                price: 650.00,
                 description: "Simple egg sandwich with fresh ingredients."
             }
         ]
