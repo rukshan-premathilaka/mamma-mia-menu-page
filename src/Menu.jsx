@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from 'react';
 import './App.css';
 import Header from "./left_side/Header.jsx";
@@ -75,13 +76,15 @@ function Menu() {
         setView("details");
     };
 
-    // Instead of directly changing state, use browser history back to keep sync
+    // Corrected back button handlers to set state directly
     const handleBackToFoods = () => {
-        window.history.back();
+        setSelectedFood(null);
+        setView("foods");
     };
 
     const handleBackToCategories = () => {
-        window.history.back();
+        setSelectedCategory(null);
+        setView("categories");
     };
 
     const handleShowMenu = () => {

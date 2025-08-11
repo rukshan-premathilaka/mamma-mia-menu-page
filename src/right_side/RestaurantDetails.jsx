@@ -1,8 +1,16 @@
 import {FaFacebook, FaInstagram, FaTiktok, FaTimes} from 'react-icons/fa';
+import { motion } from "framer-motion";
 
 export default function RestaurantDetails({ onClose }) {
     return (
-        <div className="max-w-md mx-auto h-a overflow-auto bg-white rounded-2xl shadow-xl border border-gray-200/60 p-8 flex flex-col mt-5 mb-10">
+        <motion.div
+            className="max-w-md mx-auto h-a overflow-auto bg-white rounded-2xl shadow-xl border border-gray-200/60 p-8 flex flex-col mt-5 mb-10"
+            initial={{ scale: 0.9, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            exit={{ scale: 0.9, opacity: 0 }}
+            transition={{ duration: 0.4, ease: "easeOut" }}
+        >
+
             {/* Close Button */}
             <button
                 onClick={onClose}
@@ -90,6 +98,6 @@ export default function RestaurantDetails({ onClose }) {
             {/*<p className="text-center italic text-gray-400 select-none text-sm leading-relaxed">*/}
             {/*    Web site by: <a href="https://bootpanda.com" target="_blank" rel="noopener noreferrer" className="text-red-600 hover:underline">BootPanda</a>*/}
             {/*</p>*/}
-        </div>
+        </motion.div>
     );
 }
