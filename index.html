@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mamma Mia - Italian Chinese Cuisine</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts - Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    .cursive-title {
+      font-family: 'Allura', cursive;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+<!-- Hero Section: Updated with red background and new logo/title style -->
+<header class="bg-red-500 p-6 shadow-md h-[500px] items-center flex">
+  <div class="container  mx-auto flex flex-col md:flex-row items-center justify-around">
+    <a href="#" onclick="showCategories()" class="flex items-center mb-4 md:mb-0">
+      <img src="https://placehold.co/250x250/ffffff/000000?text=Mamma+Mia+DRAGON+Logo" alt="Mamma Mia Dragon Logo" class="h-32 w-32 rounded-full shadow-lg border-4 border-white">
+    </a>
+    <h2 class="text-6xl font-semibold text-white cursive-title">Italian Menu</h2>
+  </div>
+</header>
+
+<main class="container mx-auto p-6">
+  <!-- Categories Section -->
+  <section id="categories-section" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    <!-- Category Card Template -->
+    <!-- Salad Category -->
+    <div onclick="showCategory('Salads')" class="bg-white rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-transform duration-300 cursor-pointer overflow-hidden">
+      <img src="https://placehold.co/600x400/2ecc71/ffffff?text=Salads" alt="Salads" class="w-full h-48 object-cover">
+      <div class="p-4 text-center">
+        <h3 class="text-xl font-semibold text-gray-700">Salads</h3>
+      </div>
+    </div>
+    <!-- Soups Category -->
+    <div onclick="showCategory('Soups')" class="bg-white rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-transform duration-300 cursor-pointer overflow-hidden">
+      <img src="https://placehold.co/600x400/3498db/ffffff?text=Soups" alt="Soups" class="w-full h-48 object-cover">
+      <div class="p-4 text-center">
+        <h3 class="text-xl font-semibold text-gray-700">Soups</h3>
+      </div>
+    </div>
+    <!-- Pasta Category -->
+    <div onclick="showCategory('Pasta')" class="bg-white rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-transform duration-300 cursor-pointer overflow-hidden">
+      <img src="https://placehold.co/600x400/f1c40f/ffffff?text=Pasta" alt="Pasta" class="w-full h-48 object-cover">
+      <div class="p-4 text-center">
+        <h3 class="text-xl font-semibold text-gray-700">Pasta</h3>
+      </div>
+    </div>
+    <!-- Lasagna Category -->
+    <div onclick="showCategory('Lasagna')" class="bg-white rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-transform duration-300 cursor-pointer overflow-hidden">
+      <img src="https://placehold.co/600x400/e67e22/ffffff?text=Lasagna" alt="Lasagna" class="w-full h-48 object-cover">
+      <div class="p-4 text-center">
+        <h3 class="text-xl font-semibold text-gray-700">Lasagna</h3>
+      </div>
+    </div>
+    <!-- Pizza Category -->
+    <div onclick="showCategory('Pizza')" class="bg-white rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-transform duration-300 cursor-pointer overflow-hidden">
+      <img src="https://placehold.co/600x400/e74c3c/ffffff?text=Pizza" alt="Pizza" class="w-full h-48 object-cover">
+      <div class="p-4 text-center">
+        <h3 class="text-xl font-semibold text-gray-700">Pizza</h3>
+      </div>
+    </div>
+    <!-- Rice Category -->
+    <div onclick="showCategory('Rice')" class="bg-white rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-transform duration-300 cursor-pointer overflow-hidden">
+      <img src="https://placehold.co/600x400/9b59b6/ffffff?text=Rice" alt="Rice" class="w-full h-48 object-cover">
+      <div class="p-4 text-center">
+        <h3 class="text-xl font-semibold text-gray-700">Rice</h3>
+      </div>
+    </div>
+    <!-- Sandwiches Category -->
+    <div onclick="showCategory('Sandwiches')" class="bg-white rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-transform duration-300 cursor-pointer overflow-hidden">
+      <img src="https://placehold.co/600x400/34495e/ffffff?text=Sandwiches" alt="Sandwiches" class="w-full h-48 object-cover">
+      <div class="p-4 text-center">
+        <h3 class="text-xl font-semibold text-gray-700">Sandwiches</h3>
+      </div>
+    </div>
+    <!-- Burgers Category -->
+    <div onclick="showCategory('Burgers')" class="bg-white rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-transform duration-300 cursor-pointer overflow-hidden">
+      <img src="https://placehold.co/600x400/95a5a6/ffffff?text=Burgers" alt="Burgers" class="w-full h-48 object-cover">
+      <div class="p-4 text-center">
+        <h3 class="text-xl font-semibold text-gray-700">Burgers</h3>
+      </div>
+    </div>
+    <!-- Submarines Category -->
+    <div onclick="showCategory('Submarines')" class="bg-white rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-transform duration-300 cursor-pointer overflow-hidden">
+      <img src="https://placehold.co/600x400/1abc9c/ffffff?text=Submarines" alt="Submarines" class="w-full h-48 object-cover">
+      <div class="p-4 text-center">
+        <h3 class="text-xl font-semibold text-gray-700">Submarines</h3>
+      </div>
+    </div>
+    <!-- Grill Category -->
+    <div onclick="showCategory('Grill')" class="bg-white rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-transform duration-300 cursor-pointer overflow-hidden">
+      <img src="https://placehold.co/600x400/c0392b/ffffff?text=Grill" alt="Grill" class="w-full h-48 object-cover">
+      <div class="p-4 text-center">
+        <h3 class="text-xl font-semibold text-gray-700">Grill</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu Details Section (Hidden by default) -->
+  <section id="menu-details-section" class="hidden">
+    <button onclick="showCategories()" class="mb-4 text-blue-600 hover:text-blue-800 transition-colors duration-200 flex items-center space-x-2">
+      <!-- Back Arrow SVG -->
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H16a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd" />
+      </svg>
+      <span>Back to Categories</span>
+    </button>
+    <h2 id="menu-details-title" class="text-3xl font-bold mb-6 text-center text-gray-700"></h2>
+    <div id="menu-items-list" class="bg-white rounded-xl shadow-lg p-6 space-y-4">
+      <!-- Menu items will be injected here by JavaScript -->
+    </div>
+  </section>
+</main>
+
+<!-- Footer Section: Updated with a more creative design and social media icons -->
+<footer class="bg-gray-900 text-gray-300 py-10 px-6 mt-12">
+  <div class="container mx-auto flex flex-col md:flex-row items-center justify-between space-y-6 md:space-y-0">
+    <!-- Contact Details -->
+    <div class="text-center md:text-left">
+      <h3 class="text-xl font-semibold text-white mb-2">Mamma Mia Italian Chinese Cuisine</h3>
+      <p>No. 98/A Hotel Road, Mount Lavinia</p>
+      <p class="mt-2">Contact: <a href="tel:+94774511015" class="hover:text-white transition-colors duration-200">+94774511015</a></p>
+      <p>Email: <a href="mailto:mammamiachinesedragonmammamia@gmail.com" class="hover:text-white transition-colors duration-200">mammamiachinesedragonmammamia@gmail.com</a></p>
+    </div>
+    <!-- Social Media Icons -->
+    <div class="flex space-x-6">
+      <!-- Instagram -->
+      <a href="https://www.instagram.com/mamma_mia_chinese_dragon" target="_blank" class="hover:text-pink-500 transition-colors duration-200">
+        <svg class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12 2.163c3.204 0 3.584.012 4.858.07c.75.035 1.15.161 1.44.28a2.915 2.915 0 011.758 1.758c.119.29.245.69.28 1.44.058 1.274.07 1.654.07 4.858s-.012 3.584-.07 4.858c-.035.75-.161 1.15-.28 1.44a2.915 2.915 0 01-1.758 1.758c-.29.119-.69.245-1.44.28-.737.034-1.127.045-3.088.055h-.002c-1.961-.01-2.351-.021-3.088-.055-.75-.035-1.15-.161-1.44-.28a2.915 2.915 0 01-1.758-1.758c-.119-.29-.245-.69-.28-1.44-.058-1.274-.07-1.654-.07-4.858s.012-3.584.07-4.858c.035-.75.161-1.15.28-1.44a2.915 2.915 0 011.758-1.758c.29-.119.69-.245 1.44-.28.737-.034 1.127-.045 3.088-.055h.002zM12 4.143c-3.155 0-3.518.012-4.793.07a1.91 1.91 0 00-1.16.452 1.91 1.91 0 00-.452 1.16c-.058 1.275-.07 1.638-.07 4.793s.012 3.518.07 4.793c.026.568.12.923.275 1.218a1.91 1.91 0 00.452.793 1.91 1.91 0 00.793.452c.295.155.649.249 1.218.275 1.275.058 1.638.07 4.793.07s3.518-.012 4.793-.07a1.91 1.91 0 001.16-.452 1.91 1.91 0 00.452-.793c.155-.295.249-.649.275-1.218.058-1.275.07-1.638.07-4.793s-.012-3.518-.07-4.793a1.91 1.91 0 00-.275-1.218 1.91 1.91 0 00-.452-.793 1.91 1.91 0 00-.793-.452c-.295-.155-.649-.249-1.218-.275-1.275-.058-1.638-.07-4.793-.07zM12 7.5a4.5 4.5 0 100 9 4.5 4.5 0 000-9zm0 7.5a3 3 0 110-6 3 3 0 010 6zm5.1-6.15a1.08 1.08 0 100-2.16 1.08 1.08 0 000 2.16z"></path>
+        </svg>
+      </a>
+      <!-- Tiktok -->
+      <a href="https://www.tiktok.com/@m_miarestaurant" target="_blank" class="hover:text-white transition-colors duration-200">
+        <svg class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12.39 5.85c.13.06.24.18.27.32l.01.1c.02.26-.06.52-.22.75-.41.56-.88 1.13-1.39 1.68-.42.45-.87.89-1.36 1.3-.23.19-.51.35-.77.53-.12.08-.26.15-.39.22-1.35.7-2.61 1.4-3.79 2.12-.34.2-.67.4-.98.63-.53.39-1.07.75-1.62 1.08-.3.17-.6.31-.9.45-.61.27-1.21.5-1.78.71-.05-.01-.06-.02-.07-.02-.09-.04-.15-.1-.23-.15-.58-.33-1.12-.6-1.6-.96-.13-.1-.22-.19-.34-.33-.08-.1-.18-.2-.27-.29-.36-.4-.68-.82-.95-1.26-.09-.16-.16-.32-.23-.49-.1-.26-.17-.55-.22-.84-.1-.53-.13-1.07-.09-1.61.02-.12.06-.23.09-.34.02-.07.03-.12.06-.18.15-.3.33-.57.5-.83.1-.16.19-.3.29-.44.2-.28.42-.56.65-.84.21-.26.43-.52.65-.77.17-.18.35-.35.53-.52.26-.26.54-.5.83-.73.23-.19.46-.38.7-.56.12-.09.25-.17.38-.25.17-.1.35-.2.53-.29.4-.2.8-.4 1.2-.59.27-.14.55-.26.83-.39.46-.22.94-.41 1.42-.58.33-.12.67-.23 1.01-.32.06-.02.12-.04.18-.06.27-.08.55-.15.82-.2.27-.06.55-.1.82-.12.28-.02.55-.02.82-.02h.02c.27 0 .54-.01.81-.02.26-.01.53-.02.79-.04.13-.01.27-.02.4-.03.22-.02.43-.03.65-.04.11-.01.21-.02.32-.02.21-.01.43-.01.64-.01.43 0 .85.01 1.28.03.11 0 .22.01.33.02.22.02.45.04.66.07.1.01.2.02.3.03.3.05.59.1.88.16.2.05.4.11.59.17.2.06.4.13.59.21.36.14.7.3.99.49.25.17.48.35.7.54.2.18.39.37.58.57.19.2.37.4.55.62.2.24.4.49.58.75.14.2.27.42.4.63.13.2.25.42.37.64.12.2.22.42.32.64.08.19.14.39.2.59.05.18.1.36.14.55.05.2.08.4.11.6-.01.12-.02.24-.03.35-.04.4-.09.8-.16 1.19-.07.4-.17.8-.29 1.19-.1.3-.22.59-.35.88-.2.43-.44.85-.71 1.25-.23.35-.49.69-.76 1.02-.18.23-.37.45-.56.66-.23.26-.47.51-.72.75-.4.39-.83.76-1.28 1.1-.2.15-.4.29-.6.44-.12.09-.25.18-.38.27-.16.1-.33.2-.49.29-.16.08-.34.15-.5.22-.24.1-.48.19-.72.28-.15.06-.3.12-.45.18-.2.07-.4.13-.6.19-.34.1-.68.18-1.02.25-.13.03-.25.06-.38.08-.22.05-.44.08-.66.1-.21.02-.43.03-.64.03-.43 0-.85-.01-1.28-.03-.22-.02-.45-.04-.66-.07-.1-.01-.2-.02-.3-.03-.3-.05-.59-.1-.88-.16-.2-.05-.4-.11-.59-.17-.2-.06-.4-.13-.59-.21-.36-.14-.7-.3-.99-.49-.25-.17-.48-.35-.7-.54-.2-.18-.39-.37-.58-.57-.19-.2-.37-.4-.55-.62-.2-.24-.4-.49-.58-.75-.14-.2-.27-.42-.4-.63-.13-.2-.25-.42-.37-.64-.12-.2-.22-.42-.32-.64-.08-.19-.14-.39-.2-.59-.05-.18-.1-.36-.14-.55-.05-.2-.08-.4-.11-.6.01-.12.02-.24.03-.35.04-.4.09-.8.16-1.19.07-.4.17-.8.29-1.19.1-.3.22-.59.35-.88.2-.43.44-.85.71-1.25.23-.35.49-.69.76-1.02.18-.23.37-.45.56-.66.23-.26.47-.51.72-.75.4-.39.83-.76 1.28-1.1.2-.15.4-.29.6-.44.12-.09.25-.18.38-.27.16-.1.33-.2.49-.29.16-.08.34-.15.5-.22.24-.1.48-.19.72-.28.15-.06.3-.12.45-.18.2-.07.4-.13.6-.19.34-.1.68-.18 1.02-.25.13-.03.25-.06.38-.08.22-.05.44-.08.66-.1.21-.02.43-.03.64-.03.43 0 .85.01 1.28.03.11 0 .22.01.33.02.22.02.45.04.66.07.1.01.2.02.3.03.3.05.59.1.88.16.2.05.4.11.59.17.2.06.4.13.59.21.36.14.7.3.99.49.25.17.48.35.7.54.2.18.39.37.58.57.19.2.37.4.55.62.2.24.4.49.58.75.14.2.27.42.4.63.13.2.25.42.37.64.12.2.22.42.32.64.08.19.14.39.2.59.05.18.1.36.14.55.05.2.08.4.11.6z"></path>
+        </svg>
+      </a>
+    </div>
+    <!-- Copyright -->
+    <div class="text-center md:text-right">
+      <p>&copy; 2024 Mamma Mia. All rights reserved.</p>
+      <p class="text-sm mt-1">Italian Chinese Cuisine</p>
+    </div>
+  </div>
+</footer>
+
+
+<script>
+  // Menu data extracted from the PDF
+  const menuData = {
+    "Salads": [
+      { name: "Mamma Mia Special Salad", price: "Rs 1000.00" },
+      { name: "Chicken Salad", price: "Rs 800.00" },
+      { name: "Prawns Salad", price: "Rs 900.00" },
+      { name: "Octopus Salad", price: "Rs 1100.00" },
+      { name: "Greek Salad", price: "Rs 600.00" }
+    ],
+    "Soups": [
+      { name: "Vegetable Soup", price: "Rs 650.00" },
+      { name: "Seafood Soup", price: "Rs 850.00" },
+      { name: "Tomato Soup", price: "Rs 650.00" },
+      { name: "Chicken Soup", price: "Rs 850.00" },
+      { name: "Pumpkin Soup", price: "Rs 550.00" }
+    ],
+    "Pasta": [
+      { name: "Mamma Mia Special Sea Food Pasta", description: "(Seer fish, Cuttlefish, Prawns, Feta Cheese, Tomato Sauce, Olive, Cuppari)", price: "Rs 2450.00" },
+      { name: "Pasta Tomato", description: "(Tomato Paste, Parmesan Cheese, Olive, Basilico)", price: "Rs 1350.00" },
+      { name: "Pasta Tonno Capperi Olive", description: "(Tonno, Feta Cheese, Olive, Cuppari)", price: "Rs 1850.00" },
+      { name: "Pasta Carbonara", description: "(Beef, Egg, Parmigiano, Olive Oil)", price: "Rs 2400.00" },
+      { name: "Pasta Octopus", description: "(octopus, Feta Cheese, Tomato sauce, Olive, Cuppari, Coriander seeds)", price: "Rs 2200.00" },
+      { name: "Pasta Prawns With Basilico", description: "(Prawns, Basilico, Parmesan, Zucchini, Garlic, Olive Oil)", price: "Rs 2000.00" },
+      { name: "Pasta Bolognese", description: "(Beef, Tomato Sauce, Parmigiano)", price: "Rs 1950.00" }
+    ],
+    "Lasagna": [
+      { name: "Parmigiana di Melanzane", description: "(Tomato Sauce, Basilico, Parmesan Cheese, Brinjals)", price: "Rs. 1400.00" },
+      { name: "Lasagna", description: "(Beef, tomato sauce, red wine)", price: "Rs. 2600.00" }
+    ],
+    "Pizza": [
+      { name: "Margarita Pizza (10 inches)", description: "(Tomato paste, Mozzarella Cheese, Ramzan Cheese, Olive Oil, Basilico)", price: "Rs. 2300.00" },
+      { name: "Pizza Bianco (10 inches)", description: "(Rosemary leaves)", price: "Rs. 1400.00" },
+      { name: "Vegetable Pizza (10 inches)", description: "(Tomato paste, Mozzarella Cheese, Mushroom, Bell Peper, Red Cabbage, Onion, Oliver)", price: "Rs. 1950.00" },
+      { name: "Chicken Pizza (10 inches)", description: "(Tomato paste, Mozzarella Cheese, Smoke Chicken, White Sause, Ramzan Cheese, Onion)", price: "Rs. 2250.00" },
+      { name: "Double Cheese Pizza Seafood (10 inches)", description: "(Tomato paste, Mozzarella Cheese, Seafood, Ramzan Cheese)", price: "Rs. 2900.00" },
+      { name: "Masaluna Pizza (10 inches)", description: "(Tomato paste, Mozzarella Cheese, Potato Paste Indian Style)", price: "Rs. 1950.00" },
+      { name: "Bocconcini Pizza (10 inches)", description: "(Tomato paste, Mozzarella Cheese, Ramzan Cheese, Ham & Bacon)", price: "Rs. 2900.00" }
+    ],
+    "Rice": [
+      { name: "Cuttlefish With Basilico Rice", description: "(Rice, Basilico, Cuttlefish, Olive, Cuppari, Parmigiano, Zuchchini)", price: "Rs. 1950.00" },
+      { name: "Risotto Alla Milanese (Safforon Risotto)", description: "(Rice, Butter, Parmesan Cheese)", price: "Rs. 1350.00" },
+      { name: "Seafood Rice", description: "(Seer Fish, Cuttlefish, Prawns, Rice, Olive, Cuppari)", price: "Rs. 2100.00" }
+    ],
+    "Sandwiches": [
+      { name: "Mamma Mia Special Sandwich", price: "Rs. 1900.00" },
+      { name: "Ham & Cheese Sandwich", price: "Rs. 900.00" },
+      { name: "Vegetable Sandwich", price: "Rs. 600.00" },
+      { name: "Nutella With Bread Sandwich", price: "Rs. 600.00" },
+      { name: "Egg Sandwich", price: "Rs. 650.00" }
+    ],
+    "Burgers": [
+      { name: "Crispy Chicken Burger", price: "Rs. 1150.00" },
+      { name: "Beef Burger", price: "Rs. 1350.00" },
+      { name: "Chicken Hamburger", price: "Rs. 950.00" },
+      { name: "Chees Burger", price: "Rs. 65.00" }
+    ],
+    "Submarines": [
+      { name: "Chicken Submarine", description: "(with French Fries)", price: "Rs. 1550.00" },
+      { name: "Beef Submarine", description: "(with French Fries)", price: "Rs. 1600.00" }
+    ],
+    "Grill": [
+      { name: "Grilled Chicken", price: "Rs. 2700.00" },
+      { name: "Grilled Beef", price: "Rs. 3350.00" },
+      { name: "Mix Grilled", description: "(beef, chicken, seer fish, cuttlefish, prawns)", price: "Rs.4550.00" }
+    ]
+  };
+
+  function showCategory(categoryName) {
+    const categoriesSection = document.getElementById('categories-section');
+    const menuDetailsSection = document.getElementById('menu-details-section');
+    const menuTitle = document.getElementById('menu-details-title');
+    const menuItemsList = document.getElementById('menu-items-list');
+
+    // Hide categories and show menu details
+    categoriesSection.classList.add('hidden');
+    menuDetailsSection.classList.remove('hidden');
+
+    // Set the title
+    menuTitle.textContent = categoryName;
+
+    // Clear previous items
+    menuItemsList.innerHTML = '';
+
+    // Get the items for the selected category
+    const items = menuData[categoryName] || [];
+
+    // Generate HTML for each menu item
+    if (items.length > 0) {
+      items.forEach(item => {
+        const itemElement = document.createElement('div');
+        itemElement.classList.add('flex', 'justify-between', 'items-start', 'pb-4', 'border-b', 'border-gray-200');
+        itemElement.innerHTML = `
+                        <div>
+                            <h4 class="text-lg font-semibold text-gray-800">${item.name}</h4>
+                            ${item.description ? `<p class="text-sm text-gray-500 mt-1">${item.description}</p>` : ''}
+                        </div>
+                        <span class="text-lg font-bold text-gray-700">${item.price}</span>
+                    `;
+        menuItemsList.appendChild(itemElement);
+      });
+    } else {
+      menuItemsList.innerHTML = `<p class="text-center text-gray-500">No items found for this category.</p>`;
+    }
+  }
+
+  function showCategories() {
+    const categoriesSection = document.getElementById('categories-section');
+    const menuDetailsSection = document.getElementById('menu-details-section');
+
+    // Hide menu details and show categories
+    menuDetailsSection.classList.add('hidden');
+    categoriesSection.classList.remove('hidden');
+  }
+</script>
+</body>
+</html>
