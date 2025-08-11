@@ -2,7 +2,7 @@ import {FaFacebook, FaInstagram, FaTiktok, FaTimes} from 'react-icons/fa';
 
 export default function RestaurantDetails({ onClose }) {
     return (
-        <div className="max-w-md mx-auto h-a overflow-auto bg-white rounded-2xl shadow-xl p-8 flex flex-col">
+        <div className="max-w-md mx-auto h-a overflow-auto bg-white rounded-2xl shadow-xl border border-gray-200/60 p-8 flex flex-col mt-5 mb-10">
             {/* Close Button */}
             <button
                 onClick={onClose}
@@ -14,7 +14,7 @@ export default function RestaurantDetails({ onClose }) {
 
             {/* Title */}
             <h2 className="text-4xl font-extrabold text-gray-900 mb-8 tracking-tight select-none">
-                Mamma Mia Italian Restaurant
+                Mamma Mia Dragon Restaurant
             </h2>
 
             {/* Info */}
@@ -75,14 +75,21 @@ export default function RestaurantDetails({ onClose }) {
                     </a>
                 </div><br/><br/>
                 <p className="text-center italic text-gray-400 select-none text-sm leading-relaxed">
-                    Rate and Review on Google.
+                    Rate and Review Us on Google.
                 </p>
             </section>
 
             {/* Footer note */}
-            <p className="text-center italic text-gray-400 select-none text-sm leading-relaxed">
-                &copy; 2025 prime hospitality management services PVT LTD <br/>All rights reserved.
+            <p className="inter text-center italic text-gray-400 select-none text-xs sm:text-sm md:text-base leading-relaxed tracking-wide">
+                &copy; {new Date().getFullYear()} Prime Hospitality Management Services PVT LTD
+                <br />
+                <span className="text-gray-500">All rights reserved.</span>
             </p>
+
+
+            {/*<p className="text-center italic text-gray-400 select-none text-sm leading-relaxed">*/}
+            {/*    Web site by: <a href="https://bootpanda.com" target="_blank" rel="noopener noreferrer" className="text-red-600 hover:underline">BootPanda</a>*/}
+            {/*</p>*/}
         </div>
     );
 }
