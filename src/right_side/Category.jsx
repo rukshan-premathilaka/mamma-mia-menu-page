@@ -2,13 +2,16 @@ import { motion } from "framer-motion";
 
 export default function Category({ categories, selectedCategory, onSelectCategory }) {
     const cardVariants = {
-        hidden: { opacity: 0, y: 30 },
-        visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+        hidden: { opacity: 0 },
+        visible: {
+            opacity: 1,
+            transition: { duration: 0.6, ease: "easeInOut" }
+        },
     };
 
     return (
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2 gap-6 pe-2">
-            {categories.map((cat) => (
+            {categories.map((cat, index) => (
                 <motion.div
                     key={cat.categoryId}
                     onClick={() => onSelectCategory(cat.categoryId)}
@@ -22,9 +25,9 @@ export default function Category({ categories, selectedCategory, onSelectCategor
                         if (e.key === "Enter") onSelectCategory(cat.categoryId);
                     }}
                     initial="hidden"
-                    whileInView="visible"
-                    viewport={{ once: true, amount: 0.3 }}
+                    animate="visible"
                     variants={cardVariants}
+                    transition={{ delay: index * 0.15, duration: 0.6 }} // stagger fade in by index
                 >
                     <img
                         src={cat.categoryImage}

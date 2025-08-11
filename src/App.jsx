@@ -2,11 +2,18 @@ import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Menu from "./Menu";
 import Logo from "./left_side/Logo.jsx";
+import 'aos/dist/aos.css';
+import AOS from 'aos';
+
+
 
 export default function App() {
     const [showIntro, setShowIntro] = useState(true); // start with true to show intro initially
 
+
     useEffect(() => {
+        AOS.init({ duration: 600, once: true }); // fade effect duration 600ms, runs once
+
         function onLoad() {
             setShowIntro(true);
             setTimeout(() => setShowIntro(false), 1000); // hide intro after 3.5s
