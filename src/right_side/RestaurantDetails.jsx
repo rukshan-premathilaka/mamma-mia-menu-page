@@ -1,8 +1,8 @@
-import { FaInstagram, FaTiktok, FaTimes } from 'react-icons/fa';
+import {FaFacebook, FaInstagram, FaTiktok, FaTimes} from 'react-icons/fa';
 
 export default function RestaurantDetails({ onClose }) {
     return (
-        <div className="max-w-md mx-auto h-full overflow-auto bg-white rounded-2xl shadow-xl p-8 flex flex-col">
+        <div className="max-w-md mx-auto h-a overflow-auto bg-white rounded-2xl shadow-xl p-8 flex flex-col">
             {/* Close Button */}
             <button
                 onClick={onClose}
@@ -64,15 +64,24 @@ export default function RestaurantDetails({ onClose }) {
                     >
                         <FaTiktok size={32} />
                     </a>
-                </div>
+                    <a
+                        href="https://web.facebook.com/profile.php?id=61578285705253"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Facebook"
+                        className="text-gray-600 hover:text-red-600 transition-colors"
+                    >
+                        <FaFacebook size={32} />
+                    </a>
+                </div><br/><br/>
+                <p className="text-center italic text-gray-400 select-none text-sm leading-relaxed">
+                    Rate and Review on Google.
+                </p>
             </section>
 
             {/* Footer note */}
             <p className="text-center italic text-gray-400 select-none text-sm leading-relaxed">
-                Rate and Review on Google.
-            </p>
-            <p className="text-center italic text-gray-400 select-none text-sm leading-relaxed">
-                &copy; 2023 Mamma Mia Chinese Dragon. <br/>All rights reserved.
+                &copy; 2025 prime hospitality management services PVT LTD <br/>All rights reserved.
             </p>
         </div>
     );

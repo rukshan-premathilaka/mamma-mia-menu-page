@@ -77,7 +77,7 @@ function App() {
     };
 
     return (
-        <div className="w-full h-screen flex flex-col md:flex-row ">
+        <div className="w-full h-screen flex flex-col md:flex-row font-['Inter']">
 
             {/* Left Side - Fixed */}
             <div className="w-full md:w-1/2 h-full bg-red-500 flex items-center justify-center p-4">
@@ -88,7 +88,7 @@ function App() {
             <div className="w-full md:w-1/2  flex flex-col">
 
                 {/* Search bar + Menu button */}
-                <div className="flex items-center gap-3 mb-6 m-4">
+                <div className="flex items-center gap-3 mb-6 p-4">
                     <input
                         type="text"
                         placeholder="Search food..."
@@ -141,7 +141,7 @@ function App() {
 
 
                 {/* Main content area */}
-                <div className="flex-1 overflow-auto m-4">
+                <div className="flex-1 overflow-auto p-4">
 
                     {view === "categories" && !showMenu && (
                         <Category
@@ -175,7 +175,7 @@ function App() {
                         <>
                             <button
                                 onClick={handleBackToFoods}
-                                className="mb-4 px-4 py-2 bg-gray-200 rounded hover:bg-gray-300 cursor-pointer"
+                                className="mb-4 px-4 py-2 bg-gray-200 rounded-4xl hover:bg-gray-300 cursor-pointer "
                             >
                                 ← Back to {searchTerm ? "Search Results" : "Food Items"}
                             </button>

@@ -1,6 +1,6 @@
 export default function Category({ categories, selectedCategory, onSelectCategory }) {
     return (
-        <div className="grid grid-cols-1 md:grid-cols-2  gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2 gap-6 pe-2">
             {categories.map(cat => (
                 <div
                     key={cat.categoryId}

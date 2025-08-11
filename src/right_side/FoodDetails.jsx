@@ -17,7 +17,7 @@ export default function FoodDetails({ food }) {
     };
 
     return (
-        <div className="max-w-3xl mx-auto bg-white rounded-2xl shadow-xl overflow-hidden">
+        <div className="max-w-3xl mx-auto bg-white rounded-2xl shadow-xl overflow-hidden ">
             <img
                 src={food.image}
                 alt={food.name}
