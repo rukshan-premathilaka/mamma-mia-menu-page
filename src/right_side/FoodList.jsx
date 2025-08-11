@@ -2,12 +2,12 @@ export default function FoodList({ items, onSelectFood }) {
     if (!items.length) return <p>No food items found.</p>;
 
     return (
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {items.map(item => (
                 <div
                     key={item.id}
                     onClick={() => onSelectFood(item)}
-                    className="cursor-pointer rounded-lg overflow-hidden shadow-md bg-white transform transition-transform duration-300 hover:scale-95 hover:shadow-xl"
+                    className="cursor-pointer rounded-2xl overflow-hidden shadow-md bg-white transform transition-transform duration-300 hover:scale-95 hover:shadow-xl"
                     role="button"
                     tabIndex={0}
                     onKeyDown={e => { if(e.key === 'Enter') onSelectFood(item) }}

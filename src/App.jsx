@@ -97,7 +97,8 @@ function App() {
                         disabled={showMenu}
                         className="
                                       flex-grow
-                                      p-3
+                                      py-3
+                                      px-6
                                       border
                                       border-gray-300
                                       rounded-full
@@ -117,9 +118,10 @@ function App() {
                         aria-label="Show restaurant menu"
                         className="
                                       px-5
-                                      py-2
+                                      py-3
                                       bg-gray-200
                                       text-gray-700
+                                      font-bold
                                       rounded-full
                                       hover:bg-red-600
                                       hover:text-white
@@ -153,7 +155,7 @@ function App() {
                         <>
                             <button
                                 onClick={handleBackToCategories}
-                                className="mb-4 px-4 py-2 bg-gray-200 rounded hover:bg-gray-300 cursor-pointer"
+                                className="mb-4 px-4 py-2 bg-gray-200 rounded-4xl hover:bg-gray-300 cursor-pointer"
                             >
                                 ← Back to Categories
                             </button>

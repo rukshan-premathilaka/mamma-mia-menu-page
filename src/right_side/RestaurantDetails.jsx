@@ -71,6 +71,9 @@ export default function RestaurantDetails({ onClose }) {
             <p className="text-center italic text-gray-400 select-none text-sm leading-relaxed">
                 Rate and Review on Google.
             </p>
+            <p className="text-center italic text-gray-400 select-none text-sm leading-relaxed">
+                &copy; 2023 Mamma Mia Chinese Dragon. <br/>All rights reserved.
+            </p>
         </div>
     );
 }
