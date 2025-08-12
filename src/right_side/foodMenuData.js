@@ -1,5 +1,3 @@
-import Image from '../assets/Category/fresh-vegetable-salad-with-grilled-chicken-breast.jpg';
-
 /* Salad */
 import SaladCover from '../assets/menu/salad/cover.jpg';
 import MammaMiaSpecialSalad from '../assets/menu/salad/Mamma_Mia_special_sald.jpg';
