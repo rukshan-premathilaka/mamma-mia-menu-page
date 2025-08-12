@@ -92,7 +92,7 @@ import WoodAppleJuice from '../assets/menu/juise/Wood_Apple_Juice.jpeg';
 import IceCoffee from '../assets/menu/juise/Ice_Coffee.jpg';
 import CocaColaFantaSpritePepsi from '../assets/menu/juise/Coca_Cola_Fanta_Sprite_Pepsi.jpg';
 import WaterBottle1L from '../assets/menu/juise/Water_Bottle_1L.jpg';
-import WaterBottle500ml from '../assets/menu/juise/Water_Bottle_500ml.jpeg';
+import WaterBottle500ml from '../assets/menu/juise/Water_Bottle_500ml.jpg';
 
 
 /* Ice Cream */
