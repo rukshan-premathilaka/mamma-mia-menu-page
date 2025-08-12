@@ -53,7 +53,7 @@ import EggSandwich from '../assets/menu/sanwich/Egg_Sandwich.jpg';
 import CrispyChickenBurger from '../assets/menu/Burger/CrispyChickenBurger.jpg';
 import BeefBurger from '../assets/menu/Burger/BeefBurger.jpg';
 import ChickenHamburger from '../assets/menu/Burger/ChickenHamburger.jpg';
-import CheeseBurger from '../assets/menu/burger/Cheese_Burger.jpg';
+import CheeseBurger from '../assets/menu/Burger/CheeseBurger.jpg';
 
 /* Submarine */
 import ChickenSubmarine from '../assets/menu/Submarines/Chicken_Submarine.jpg';
