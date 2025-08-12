@@ -52,7 +52,7 @@ import NutellaWithBreadSandwich from '../assets/menu/sanwich/Nutella_With_Bread_
 import EggSandwich from '../assets/menu/sanwich/Egg_Sandwich.jpg';
 
 /* Burger */
-import CrispyChickenBurger from '../assets/menu/burger/Crispy_Chicken_Burger_.jpg';
+import CrispyChickenBurger from '../assets/menu/burger/Crispy_Chicken_Burger.jpg';
 import BeefBurger from '../assets/menu/burger/Beef_Burger.jpg';
 import ChickenHamburger from '../assets/menu/burger/Chicken_Hamburger.jpg';
 import CheeseBurger from '../assets/menu/burger/Cheese_Burger.jpg';
@@ -84,6 +84,18 @@ import MilkTea from '../assets/menu/Hot_Drinks/Milk_Tea.jpg';
 import SriLankanCoffee from '../assets/menu/Hot_Drinks/Sri_Lankan_Coffee.jpg';
 
 /* Beverages */
+import BeveragesCover from '../assets/menu/juise/Coca_Cola_Fanta_Sprite_Pepsi.jpg';
+import OrangeJuice from '../assets/menu/juise/Orange_Juice.jpg';
+import LemonJuice from '../assets/menu/juise/Lemon_Juice.jpg';
+import MangoJuice from '../assets/menu/juise/Mango_Juice.jpeg';
+import AvocadoJuice from '../assets/menu/juise/Avocado_Juice.jpg';
+import PineappleJuice from '../assets/menu/juise/Pineapple_juice.jpeg';
+import WoodAppleJuice from '../assets/menu/juise/Wood_Apple_Juice.jpeg';
+import IceCoffee from '../assets/menu/juise/Ice_Coffee.jpg';
+import CocaColaFantaSpritePepsi from '../assets/menu/juise/Coca_Cola_Fanta_Sprite_Pepsi.jpg';
+import WaterBottle1L from '../assets/menu/juise/Water_Bottle_1L.jpg';
+import WaterBottle500ml from '../assets/menu/juise/Water_Bottle_500ml.jpeg';
+
 
 /* Ice Cream */
 import ChocolateIceCream from '../assets/menu/Ice Cream/Chocolate_Ice_Cream.jpg';
@@ -560,75 +572,75 @@ const foodMenu = [
     {
         categoryId: 13,
         categoryName: "Beverages",
-        categoryImage: Image,
+        categoryImage: BeveragesCover,
         items: [
             {
                 id: 55,
                 name: "Orange Juice",
-                image: Image,
+                image: OrangeJuice,
                 price: 650.00,
                 description: "Freshly squeezed orange juice."
             },
             {
                 id: 56,
                 name: "Lemon Juice",
-                image: Image,
+                image: LemonJuice,
                 price: 350.00,
                 description: "Tangy lemon juice."
             },
             {
                 id: 57,
                 name: "Mango Juice",
-                image: Image,
+                image: MangoJuice,
                 price: 500.00,
                 description: "Sweet mango juice."
             },
             {
                 id: 58,
                 name: "Avocado Juice",
-                image: Image,
+                image: AvocadoJuice,
                 price: 550.00,
                 description: "Creamy avocado juice."
             },
             {
                 id: 59,
                 name: "Pineapple Juice",
-                image: Image,
+                image: PineappleJuice,
                 price: 450.00,
                 description: "Refreshing pineapple juice."
             },
             {
                 id: 60,
                 name: "Wood Apple Juice",
-                image: Image,
+                image: WoodAppleJuice,
                 price: 450.00,
                 description: "Unique wood apple juice."
             },
             {
                 id: 61,
                 name: "Ice Coffee",
-                image: Image,
+                image: IceCoffee,
                 price: 450.00,
                 description: "Chilled coffee drink."
             },
             {
                 id: 62,
                 name: "Coca-Cola, Fanta, Sprite, Pepsi",
-                image: Image,
+                image: CocaColaFantaSpritePepsi,
                 price: 180.00,
                 description: "Choice of soft drinks."
             },
             {
                 id: 63,
                 name: "Water Bottle 1L",
-                image: Image,
+                image: WaterBottle1L,
                 price: 180.00,
                 description: "1-liter bottled water."
             },
             {
                 id: 64,
                 name: "Water Bottle 500ml",
-                image: Image,
+                image: WaterBottle500ml,
                 price: 80.00,
                 description: "500ml bottled water."
             }
