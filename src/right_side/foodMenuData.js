@@ -34,7 +34,7 @@ import VegetablePizza10 from '../assets/menu/Pizza/Vegetable_Pizza_10.jpg';
 import ChickenPizza10 from '../assets/menu/Pizza/Chicken_Pizza_10.jpg';
 import MasalunaPizza10 from '../assets/menu/Pizza/Masaluna_Pizza_10.jpg';
 import BocconciniPizza10 from '../assets/menu/Pizza/Bocconcini_Pizza_10.jpg';
-import DoubleCheesePizzaSeafood10 from '../assets/menu/Pizza/Double_Cheese_Pizza_Seafood 10.jpg';
+import DoubleCheesePizzaSeafood10 from '../assets/menu/Pizza/Double_Cheese_Pizza_Seafood_10.avif';
 
 
 /* Rice */
