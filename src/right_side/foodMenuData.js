@@ -1,43 +1,79 @@
 import Image from '../assets/Category/fresh-vegetable-salad-with-grilled-chicken-breast.jpg';
 
+/* Ice Cream */
+import IceCream from '../assets/menu/Ice Cream/cover.png';
+import ChocolateIceCream from '../assets/menu/Ice Cream/Chocolate Ice Cream.png';
+import VanillaIceCream from '../assets/menu/Ice Cream/Vanilla Ice Cream.avif';
+import NutsIceCream from '../assets/menu/Ice Cream/Nuts Ice Cream.png';
+import StrawberryIceCream from '../assets/menu/Ice Cream/Strawberry-Ice-Cream.jpg';
+import FruitSaladIceCream from '../assets/menu/Ice Cream/Fruit Salad with Ice Cream.jpg';
+
+/* Pizza */
+import Lasagna from '../assets/menu/Lasagna/Lasagna.jpg';
+import ParmigianadiMelanzane from '../assets/menu/Lasagna/Parmigiana di Melanzane.jpg';
+
+/* Pasta */
+import MammaMiaSpecialSeaFoodPasta from '../assets/menu/Pasta/mamma mia speacial sea food pasta .jpg';
+import PastaTomato from '../assets/menu/Pasta/tomoto pasta.jpg';
+import PastaTonnoCapperiOlive from '../assets/menu/pasta/Pasta Tonno Capperi Olive.jpg';
+import PastaCarbonara from '../assets/menu/Pasta/Pasta Carbonara.jpg';
+import PastaOctopus from '../assets/menu/Pasta/octopus pasta.jpg';
+import PastaPrawnsWithBasilico from '../assets/menu/Pasta/Pasta Prawns With Basilico.jpg';
+import PastaBolognese from '../assets/menu/Pasta/Pasta Bolognese.jpg';
+
+/* Salad */
+import MammaMiaSpecialSalad from '../assets/menu/Salad/Mamma Mia special sald.jpg';
+import ChickenSalad from '../assets/menu/Salad/Chicken Salad.jpg';
+import PrawnsSalad from '../assets/menu/Salad/Prawns Salad.jpg';
+import OctopusSalad from '../assets/menu/Salad/Octopus Salad.jpg';
+import GreekSalad from '../assets/menu/Salad/Greek Salad.jpg';
+
+/* Soup */
+import VegetableSoup from '../assets/menu/Soups/vegitable soups.jpg';
+import SeafoodSoup from '../assets/menu/Soups/seafoods soups.jpg';
+import TomatoSoup from '../assets/menu/Soups/tomoto soups.jpg';
+import ChickenSoup from '../assets/menu/Soups/chicken soups.jpg';
+import PumpkinSoup from '../assets/menu/Soups/pumpkin soups.jpg';
+
+
 const foodMenu = [
     {
         categoryId: 1,
         categoryName: "Salads",
-        categoryImage: Image,
+        categoryImage: MammaMiaSpecialSalad,
         items: [
             {
                 id: 1,
                 name: "Mamma Mia Special Salad",
-                image: Image,
+                image: MammaMiaSpecialSalad,
                 price: 1000.00,
                 description: "Special house salad with a mix of fresh ingredients."
             },
             {
                 id: 2,
                 name: "Chicken Salad",
-                image: Image,
+                image: ChickenSalad,
                 price: 800.00,
                 description: "Fresh salad with tender chicken pieces."
             },
             {
                 id: 3,
                 name: "Prawns Salad",
-                image: Image,
+                image: PrawnsSalad,
                 price: 900.00,
                 description: "Salad featuring succulent prawns."
             },
             {
                 id: 4,
                 name: "Octopus Salad",
-                image: Image,
+                image: OctopusSalad,
                 price: 1100.00,
                 description: "Salad with octopus and fresh greens."
             },
             {
                 id: 5,
                 name: "Greek Salad",
-                image: Image,
+                image: GreekSalad,
                 price: 600.00,
                 description: "Classic Greek salad with feta and olives."
             }
@@ -46,40 +82,40 @@ const foodMenu = [
     {
         categoryId: 2,
         categoryName: "Soups",
-        categoryImage: Image,
+        categoryImage: SeafoodSoup,
         items: [
             {
                 id: 6,
                 name: "Vegetable Soup",
-                image: Image,
+                image: VegetableSoup,
                 price: 650.00,
                 description: "Hearty soup with fresh vegetables."
             },
             {
                 id: 7,
                 name: "Seafood Soup",
-                image: Image,
+                image: SeafoodSoup,
                 price: 850.00,
                 description: "Rich soup with assorted seafood."
             },
             {
                 id: 8,
                 name: "Tomato Soup",
-                image: Image,
+                image: TomatoSoup,
                 price: 650.00,
                 description: "Creamy tomato soup with fresh herbs."
             },
             {
                 id: 9,
                 name: "Chicken Soup",
-                image: Image,
+                image: ChickenSoup,
                 price: 850.00,
                 description: "Comforting chicken soup with vegetables."
             },
             {
                 id: 10,
                 name: "Pumpkin Soup",
-                image: Image,
+                image: PumpkinSoup,
                 price: 550.00,
                 description: "Smooth and creamy pumpkin soup."
             }
@@ -88,54 +124,54 @@ const foodMenu = [
     {
         categoryId: 3,
         categoryName: "Pasta",
-        categoryImage: Image,
+        categoryImage: PastaTomato,
         items: [
             {
                 id: 11,
                 name: "Mamma Mia Special Sea Food Pasta",
-                image: Image,
+                image: MammaMiaSpecialSeaFoodPasta,
                 price: 2450.00,
                 description: "Seer fish, cuttlefish, prawns, feta cheese, tomato sauce, olive, cuppari."
             },
             {
                 id: 12,
                 name: "Pasta Tomato",
-                image: Image,
+                image: PastaTomato,
                 price: 1350.00,
                 description: "Tomato paste, parmesan cheese, olive, basilico."
             },
             {
                 id: 13,
                 name: "Pasta Tonno Capperi Olive",
-                image: Image,
+                image: PastaTonnoCapperiOlive,
                 price: 1850.00,
                 description: "Tonno, feta cheese, olive, cuppari."
             },
             {
                 id: 14,
                 name: "Pasta Carbonara",
-                image: Image,
+                image: PastaCarbonara,
                 price: 2400.00,
                 description: "Beef, egg, parmigiano, olive oil."
             },
             {
                 id: 15,
                 name: "Pasta Octopus",
-                image: Image,
+                image: PastaOctopus,
                 price: 2200.00,
                 description: "Octopus, feta cheese, tomato sauce, olive, cuppari, coriander seeds."
             },
             {
                 id: 16,
                 name: "Pasta Prawns With Basilico",
-                image: Image,
+                image: PastaPrawnsWithBasilico,
                 price: 2000.00,
                 description: "Prawns, basilico, parmesan, zucchini, garlic, olive oil."
             },
             {
                 id: 17,
                 name: "Pasta Bolognese",
-                image: Image,
+                image: PastaBolognese,
                 price: 1950.00,
                 description: "Beef, tomato sauce, parmigiano."
             }
@@ -144,19 +180,19 @@ const foodMenu = [
     {
         categoryId: 4,
         categoryName: "Lasagna",
-        categoryImage: Image,
+        categoryImage: Lasagna,
         items: [
             {
                 id: 18,
                 name: "Parmigiana di Melanzane",
-                image: Image,
+                image: ParmigianadiMelanzane,
                 price: 1400.00,
                 description: "Tomato sauce, basilico, parmesan cheese, brinjals."
             },
             {
                 id: 19,
                 name: "Lasagna",
-                image: Image,
+                image: Lasagna,
                 price: 2600.00,
                 description: "Beef, tomato sauce, red wine."
             }
@@ -543,40 +579,40 @@ const foodMenu = [
     {
         categoryId: 14,
         categoryName: "Ice Cream",
-        categoryImage: Image,
+        categoryImage: IceCream,
         items: [
             {
                 id: 65,
                 name: "Vanilla Ice Cream",
-                image: Image,
+                image: VanillaIceCream,
                 price: 500.00,
                 description: "Classic vanilla ice cream."
             },
             {
                 id: 66,
                 name: "Chocolate Ice Cream",
-                image: Image,
+                image: ChocolateIceCream,
                 price: 500.00,
                 description: "Rich chocolate ice cream."
             },
             {
                 id: 67,
                 name: "Nuts Ice Cream",
-                image: Image,
+                image: NutsIceCream,
                 price: 550.00,
                 description: "Ice cream with crunchy nuts."
             },
             {
                 id: 68,
                 name: "Strawberry Ice Cream",
-                image: Image,
+                image: StrawberryIceCream,
                 price: 600.00,
                 description: "Sweet strawberry ice cream."
             },
             {
                 id: 69,
                 name: "Fruit Salad with Ice Cream",
-                image: Image,
+                image: FruitSaladIceCream,
                 price: 650.00,
                 description: "Fresh fruit salad with ice cream."
             }

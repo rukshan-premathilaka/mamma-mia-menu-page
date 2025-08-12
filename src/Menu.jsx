@@ -196,7 +196,7 @@ function Menu() {
                         <>
                             <button
                                 onClick={handleBackToFoods}
-                                className="mb-4 px-4 py-2 bg-gray-200 rounded-4xl hover:bg-gray-300 cursor-pointer"
+                                className="mb-4 px-4 py-2 bg-gray-200 rounded-4xl hover:bg-gray-300 cursor-pointer "
                             >
                                 ← Back to {searchTerm ? "Search Results" : "Food Items"}
                             </button>
