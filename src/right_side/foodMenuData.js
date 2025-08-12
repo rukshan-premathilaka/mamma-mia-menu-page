@@ -32,7 +32,7 @@ import PastaBolognese from '../assets/menu/pasta/Pasta_Bolognese.jpg';
 
 
 /* Lasagna */
-import Lasagna from '../assets/menu/Lasagna/Lasagna.jpg';
+import Lasagna from '../assets/menu/lasagna/_Lasagna.jpg';
 import ParmigianadiMelanzane from '../assets/menu/lasagna/Parmigiana_di_Melanzane.jpg';
 
 /* Pizza */
