@@ -1,61 +1,61 @@
 import Image from '../assets/Category/fresh-vegetable-salad-with-grilled-chicken-breast.jpg';
 
 /* Salad */
-import MammaMiaSpecialSalad from '../assets/menu/Salad/Mamma Mia special sald.jpg';
-import ChickenSalad from '../assets/menu/Salad/Chicken Salad.jpg';
-import PrawnsSalad from '../assets/menu/Salad/Prawns Salad.jpg';
-import OctopusSalad from '../assets/menu/Salad/Octopus Salad.jpg';
-import GreekSalad from '../assets/menu/Salad/Greek Salad.jpg';
+import MammaMiaSpecialSalad from '../assets/menu/salad/Mamma_Mia_special_sald.jpg';
+import ChickenSalad from '../assets/menu/salad/chicken_salad.jpg';
+import PrawnsSalad from '../assets/menu/salad/prawns_Salad.jpg';
+import OctopusSalad from '../assets/menu/salad/octopus_salad.jpg';
+import GreekSalad from '../assets/menu/salad/greek_salad.jpg';
 
 /* Soup */
-import VegetableSoup from '../assets/menu/Soups/vegitable soups.jpg';
-import SeafoodSoup from '../assets/menu/Soups/seafoods soups.jpg';
-import TomatoSoup from '../assets/menu/Soups/tomoto soups.jpg';
-import ChickenSoup from '../assets/menu/Soups/chicken soups.jpg';
-import PumpkinSoup from '../assets/menu/Soups/pumpkin soups.jpg';
+import VegetableSoup from '../assets/menu/soups/vegitable_soups.jpg';
+import SeafoodSoup from '../assets/menu/soups/seafoods_soups.jpg';
+import TomatoSoup from '../assets/menu/soups/tomoto_soups.jpg';
+import ChickenSoup from '../assets/menu/soups/chicken_soups.jpg';
+import PumpkinSoup from '../assets/menu/soups/pumpkin_soups.jpg';
 
 /* Ice Cream */
-import ChocolateIceCream from '../assets/menu/Ice Cream/Chocolate Ice Cream.jpg';
-import VanillaIceCream from '../assets/menu/Ice Cream/Vanilla Ice Cream.jpg';
-import NutsIceCream from '../assets/menu/Ice Cream/Nuts Ice Cream.jpg';
-import StrawberryIceCream from '../assets/menu/Ice Cream/Strawberry Ice Cream.jpg';
-import FruitSaladIceCream from '../assets/menu/Ice Cream/Fruit Salad with Ice Cream.jpg';
+import ChocolateIceCream from '../assets/menu/Ice Cream/Chocolate_Ice_Cream.jpg';
+import VanillaIceCream from '../assets/menu/Ice Cream/Vanilla_Ice_Cream.jpg';
+import NutsIceCream from '../assets/menu/Ice Cream/Nuts_Ice_Cream.jpg';
+import StrawberryIceCream from '../assets/menu/Ice Cream/Strawberry_Ice_Cream.jpg';
+import FruitSaladIceCream from '../assets/menu/Ice Cream/Fruit_Salad_with_Ice_Cream.jpg';
 
 /* Pasta */
-import MammaMiaSpecialSeaFoodPasta from '../assets/menu/Pasta/mamma mia speacial sea food pasta .jpg';
-import PastaTomato from '../assets/menu/Pasta/tomoto pasta.jpg';
-import PastaTonnoCapperiOlive from '../assets/menu/pasta/Pasta Tonno Capperi Olive.jpg';
-import PastaCarbonara from '../assets/menu/Pasta/Pasta Carbonara.jpg';
-import PastaOctopus from '../assets/menu/Pasta/octopus pasta.jpg';
-import PastaPrawnsWithBasilico from '../assets/menu/Pasta/Pasta Prawns With Basilico.jpg';
-import PastaBolognese from '../assets/menu/Pasta/Pasta Bolognese.jpg';
+import MammaMiaSpecialSeaFoodPasta from '../assets/menu/pasta/mamma_mia_speacial_sea_food_pasta .jpg';
+import PastaTomato from '../assets/menu/pasta/tomoto_pasta.jpg';
+import PastaTonnoCapperiOlive from '../assets/menu/pasta/Pasta_Tonno_Capperi_Olive.jpg';
+import PastaCarbonara from '../assets/menu/pasta/Pasta_Carbonara.jpg';
+import PastaOctopus from '../assets/menu/pasta/octopus_pasta.jpg';
+import PastaPrawnsWithBasilico from '../assets/menu/pasta/Pasta_Prawns_With_Basilico.jpg';
+import PastaBolognese from '../assets/menu/pasta/Pasta_Bolognese.jpg';
 
 
 /* Lasagna */
 import Lasagna from '../assets/menu/Lasagna/Lasagna.jpg';
-import ParmigianadiMelanzane from '../assets/menu/Lasagna/Parmigiana di Melanzane.jpg';
+import ParmigianadiMelanzane from '../assets/menu/lasagna/Parmigiana_di_Melanzane.jpg';
 
 /* Pizza */
-import MargaritaPizza10 from '../assets/menu/Pizza/Margarita Pizza 10.jpg';
-import PizzaBianca10  from '../assets/menu/Pizza/Pizza Bianca 10.jpg';
-import VegetablePizza10 from '../assets/menu/Pizza/Vegetable Pizza 10.jpg';
-import ChickenPizza10 from '../assets/menu/Pizza/Chicken Pizza 10.jpg';
-import MasalunaPizza10 from '../assets/menu/Pizza/Masaluna Pizza 10.jpg';
-import BocconciniPizza10 from '../assets/menu/Pizza/Bocconcini Pizza 10.jpg';
-import DoubleCheesePizzaSeafood10 from '../assets/menu/Pizza/Double Cheese Pizza Seafood 10.jpg';
+import MargaritaPizza10 from '../assets/menu/Pizza/Margarita_Pizza_10.jpg';
+import PizzaBianca10  from '../assets/menu/Pizza/Pizza_Bianca_10.jpg';
+import VegetablePizza10 from '../assets/menu/Pizza/Vegetable_Pizza_10.jpg';
+import ChickenPizza10 from '../assets/menu/Pizza/Chicken_Pizza_10.jpg';
+import MasalunaPizza10 from '../assets/menu/Pizza/Masaluna_Pizza_10.jpg';
+import BocconciniPizza10 from '../assets/menu/Pizza/Bocconcini_Pizza_10.jpg';
+import DoubleCheesePizzaSeafood10 from '../assets/menu/Pizza/Double_Cheese_Pizza_Seafood 10.jpg';
 
 
 /* Rice */
-import CuttlefishWithBasilicoRice from '../assets/menu/Rice/Cuttlefish With Basilico Rice.jpg';
-import RisottoAllaMilanese from '../assets/menu/Rice/Risotto Alla Milanese.jpg';
-import SeafoodRice from '../assets/menu/Rice/sea food rice.jpg';
+import CuttlefishWithBasilicoRice from '../assets/menu/rice/Cuttlefish_With_Basilico_Rice.jpg';
+import RisottoAllaMilanese from '../assets/menu/rice/Risotto_Alla_Milanese.jpg';
+import SeafoodRice from '../assets/menu/rice/sea_food_rice.jpg';
 
 /* Sandwich */
-import MammaMiaSpecialSandwich from '../assets/menu/sanwich/Mamma Mia Special Sandwich.jpg';
-import HamAndCheeseSandwich from '../assets/menu/sanwich/Ham & Cheese Sandwich.jpg';
-import VegetableSandwich from '../assets/menu/sanwich/Vegetable Sandwich.jpg';
-import NutellaWithBreadSandwich from '../assets/menu/sanwich/Nutella With Bread Sandwich.jpg';
-import EggSandwich from '../assets/menu/sanwich/Egg Sandwich.jpg';
+import MammaMiaSpecialSandwich from '../assets/menu/sanwich/Mamma_Mia_Special_Sandwich.jpg';
+import HamAndCheeseSandwich from '../assets/menu/sanwich/Ham_&_Cheese_Sandwich.jpg';
+import VegetableSandwich from '../assets/menu/sanwich/Vegetable_Sandwich.jpg';
+import NutellaWithBreadSandwich from '../assets/menu/sanwich/Nutella_With_Bread_Sandwich.jpg';
+import EggSandwich from '../assets/menu/sanwich/Egg_Sandwich.jpg';
 
 /* Burger */
 
