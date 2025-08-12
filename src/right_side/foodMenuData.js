@@ -1,26 +1,5 @@
 import Image from '../assets/Category/fresh-vegetable-salad-with-grilled-chicken-breast.jpg';
 
-/* Ice Cream */
-import IceCream from '../assets/menu/Ice Cream/cover.png';
-import ChocolateIceCream from '../assets/menu/Ice Cream/Chocolate Ice Cream.png';
-import VanillaIceCream from '../assets/menu/Ice Cream/Vanilla Ice Cream.avif';
-import NutsIceCream from '../assets/menu/Ice Cream/Nuts Ice Cream.png';
-import StrawberryIceCream from '../assets/menu/Ice Cream/Strawberry-Ice-Cream.jpg';
-import FruitSaladIceCream from '../assets/menu/Ice Cream/Fruit Salad with Ice Cream.jpg';
-
-/* Pizza */
-import Lasagna from '../assets/menu/Lasagna/Lasagna.jpg';
-import ParmigianadiMelanzane from '../assets/menu/Lasagna/Parmigiana di Melanzane.jpg';
-
-/* Pasta */
-import MammaMiaSpecialSeaFoodPasta from '../assets/menu/Pasta/mamma mia speacial sea food pasta .jpg';
-import PastaTomato from '../assets/menu/Pasta/tomoto pasta.jpg';
-import PastaTonnoCapperiOlive from '../assets/menu/pasta/Pasta Tonno Capperi Olive.jpg';
-import PastaCarbonara from '../assets/menu/Pasta/Pasta Carbonara.jpg';
-import PastaOctopus from '../assets/menu/Pasta/octopus pasta.jpg';
-import PastaPrawnsWithBasilico from '../assets/menu/Pasta/Pasta Prawns With Basilico.jpg';
-import PastaBolognese from '../assets/menu/Pasta/Pasta Bolognese.jpg';
-
 /* Salad */
 import MammaMiaSpecialSalad from '../assets/menu/Salad/Mamma Mia special sald.jpg';
 import ChickenSalad from '../assets/menu/Salad/Chicken Salad.jpg';
@@ -34,6 +13,66 @@ import SeafoodSoup from '../assets/menu/Soups/seafoods soups.jpg';
 import TomatoSoup from '../assets/menu/Soups/tomoto soups.jpg';
 import ChickenSoup from '../assets/menu/Soups/chicken soups.jpg';
 import PumpkinSoup from '../assets/menu/Soups/pumpkin soups.jpg';
+
+/* Ice Cream */
+import ChocolateIceCream from '../assets/menu/Ice Cream/Chocolate Ice Cream.jpg';
+import VanillaIceCream from '../assets/menu/Ice Cream/Vanilla Ice Cream.jpg';
+import NutsIceCream from '../assets/menu/Ice Cream/Nuts Ice Cream.jpg';
+import StrawberryIceCream from '../assets/menu/Ice Cream/Strawberry Ice Cream.jpg';
+import FruitSaladIceCream from '../assets/menu/Ice Cream/Fruit Salad with Ice Cream.jpg';
+
+/* Pasta */
+import MammaMiaSpecialSeaFoodPasta from '../assets/menu/Pasta/mamma mia speacial sea food pasta .jpg';
+import PastaTomato from '../assets/menu/Pasta/tomoto pasta.jpg';
+import PastaTonnoCapperiOlive from '../assets/menu/pasta/Pasta Tonno Capperi Olive.jpg';
+import PastaCarbonara from '../assets/menu/Pasta/Pasta Carbonara.jpg';
+import PastaOctopus from '../assets/menu/Pasta/octopus pasta.jpg';
+import PastaPrawnsWithBasilico from '../assets/menu/Pasta/Pasta Prawns With Basilico.jpg';
+import PastaBolognese from '../assets/menu/Pasta/Pasta Bolognese.jpg';
+
+
+/* Lasagna */
+import Lasagna from '../assets/menu/Lasagna/Lasagna.jpg';
+import ParmigianadiMelanzane from '../assets/menu/Lasagna/Parmigiana di Melanzane.jpg';
+
+/* Pizza */
+import MargaritaPizza10 from '../assets/menu/Pizza/Margarita Pizza 10.jpg';
+import PizzaBianca10  from '../assets/menu/Pizza/Pizza Bianca 10.jpg';
+import VegetablePizza10 from '../assets/menu/Pizza/Vegetable Pizza 10.jpg';
+import ChickenPizza10 from '../assets/menu/Pizza/Chicken Pizza 10.jpg';
+import MasalunaPizza10 from '../assets/menu/Pizza/Masaluna Pizza 10.jpg';
+import BocconciniPizza10 from '../assets/menu/Pizza/Bocconcini Pizza 10.jpg';
+import DoubleCheesePizzaSeafood10 from '../assets/menu/Pizza/Double Cheese Pizza Seafood 10.jpg';
+
+
+/* Rice */
+import CuttlefishWithBasilicoRice from '../assets/menu/Rice/Cuttlefish With Basilico Rice.jpg';
+import RisottoAllaMilanese from '../assets/menu/Rice/Risotto Alla Milanese.jpg';
+import SeafoodRice from '../assets/menu/Rice/sea food rice.jpg';
+
+/* Sandwich */
+import MammaMiaSpecialSandwich from '../assets/menu/sanwich/Mamma Mia Special Sandwich.jpg';
+import HamAndCheeseSandwich from '../assets/menu/sanwich/Ham & Cheese Sandwich.jpg';
+import VegetableSandwich from '../assets/menu/sanwich/Vegetable Sandwich.jpg';
+import NutellaWithBreadSandwich from '../assets/menu/sanwich/Nutella With Bread Sandwich.jpg';
+import EggSandwich from '../assets/menu/sanwich/Egg Sandwich.jpg';
+
+/* Burger */
+
+/* Submarine */
+
+/* Submarine */
+
+/* Grill */
+
+/* Fish Grill */
+
+/* Hot Drinks */
+
+/* Beverages */
+
+/* Ice Cream */
+
 
 
 const foodMenu = [
@@ -201,54 +240,54 @@ const foodMenu = [
     {
         categoryId: 5,
         categoryName: "Pizza",
-        categoryImage: Image,
+        categoryImage: MasalunaPizza10,
         items: [
             {
                 id: 20,
                 name: "Margarita Pizza 10\"",
-                image: Image,
+                image: MargaritaPizza10,
                 price: 2300.00,
                 description: "Tomato paste, mozzarella cheese, ramzan cheese, olive oil, basilico."
             },
             {
                 id: 21,
                 name: "Pizza Bianca 10\"",
-                image: Image,
+                image: PizzaBianca10,
                 price: 1400.00,
                 description: "Rosemary leaves."
             },
             {
                 id: 22,
                 name: "Vegetable Pizza 10\"",
-                image: Image,
+                image: VegetablePizza10,
                 price: 1950.00,
                 description: "Tomato paste, mozzarella cheese, mushroom, bell pepper, red cabbage, onion, olive."
             },
             {
                 id: 23,
                 name: "Chicken Pizza 10\"",
-                image: Image,
+                image: ChickenPizza10,
                 price: 2250.00,
                 description: "Tomato paste, mozzarella cheese, smoke chicken, white sauce, ramzan cheese, onion."
             },
             {
                 id: 24,
                 name: "Double Cheese Pizza Seafood 10\"",
-                image: Image,
+                image: DoubleCheesePizzaSeafood10,
                 price: 2900.00,
                 description: "Tomato paste, mozzarella cheese, seafood, ramzan cheese."
             },
             {
                 id: 25,
                 name: "Masaluna Pizza 10\"",
-                image: Image,
+                image: MasalunaPizza10,
                 price: 1950.00,
                 description: "Tomato paste, mozzarella cheese, potato paste Indian style."
             },
             {
                 id: 26,
                 name: "Bocconcini Pizza 10\"",
-                image: Image,
+                image: BocconciniPizza10,
                 price: 2900.00,
                 description: "Tomato paste, mozzarella cheese, ramzan cheese, ham & bacon."
             }
@@ -257,26 +296,26 @@ const foodMenu = [
     {
         categoryId: 6,
         categoryName: "Rice",
-        categoryImage: Image,
+        categoryImage: RisottoAllaMilanese,
         items: [
             {
                 id: 27,
                 name: "Cuttlefish With Basilico Rice",
-                image: Image,
+                image: CuttlefishWithBasilicoRice,
                 price: 1950.00,
                 description: "Rice, basilico, cuttlefish, olive, cuppari, parmigiana, zucchini."
             },
             {
                 id: 28,
                 name: "Risotto Alla Milanese",
-                image: Image,
+                image: RisottoAllaMilanese,
                 price: 1350.00,
                 description: "Saffron risotto with rice, butter, parmesan cheese."
             },
             {
                 id: 29,
                 name: "Seafood Rice",
-                image: Image,
+                image: SeafoodRice,
                 price: 2100.00,
                 description: "Seer fish, cuttlefish, prawns, rice, olive, cuppari."
             }
@@ -285,40 +324,40 @@ const foodMenu = [
     {
         categoryId: 7,
         categoryName: "Sandwiches",
-        categoryImage: Image,
+        categoryImage: VegetableSandwich,
         items: [
             {
                 id: 30,
                 name: "Mamma Mia Special Sandwich",
-                image: Image,
+                image: MammaMiaSpecialSandwich,
                 price: 1900.00,
                 description: "Special house sandwich with premium ingredients."
             },
             {
                 id: 31,
                 name: "Ham & Cheese Sandwich",
-                image: Image,
+                image: HamAndCheeseSandwich,
                 price: 900.00,
                 description: "Classic ham and cheese sandwich."
             },
             {
                 id: 32,
                 name: "Vegetable Sandwich",
-                image: Image,
+                image: VegetableSandwich,
                 price: 600.00,
                 description: "Fresh vegetable sandwich with greens."
             },
             {
                 id: 33,
                 name: "Nutella With Bread Sandwich",
-                image: Image,
+                image: NutellaWithBreadSandwich,
                 price: 600.00,
                 description: "Sweet Nutella spread on bread."
             },
             {
                 id: 34,
                 name: "Egg Sandwich",
-                image: Image,
+                image: EggSandwich,
                 price: 650.00,
                 description: "Simple egg sandwich with fresh ingredients."
             }
@@ -579,7 +618,7 @@ const foodMenu = [
     {
         categoryId: 14,
         categoryName: "Ice Cream",
-        categoryImage: IceCream,
+        categoryImage: VanillaIceCream,
         items: [
             {
                 id: 65,
