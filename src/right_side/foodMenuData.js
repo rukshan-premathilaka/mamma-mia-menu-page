@@ -1,6 +1,7 @@
 import Image from '../assets/Category/fresh-vegetable-salad-with-grilled-chicken-breast.jpg';
 
 /* Salad */
+import SaladCover from '../assets/menu/salad/cover.jpg';
 import MammaMiaSpecialSalad from '../assets/menu/salad/Mamma_Mia_special_sald.jpg';
 import ChickenSalad from '../assets/menu/salad/chicken_salad.jpg';
 import PrawnsSalad from '../assets/menu/salad/prawns_Salad.jpg';
@@ -13,13 +14,6 @@ import SeafoodSoup from '../assets/menu/soups/seafoods_soups.jpg';
 import TomatoSoup from '../assets/menu/soups/tomoto_soups.jpg';
 import ChickenSoup from '../assets/menu/soups/chicken_soups.jpg';
 import PumpkinSoup from '../assets/menu/soups/pumpkin_soups.jpg';
-
-/* Ice Cream */
-import ChocolateIceCream from '../assets/menu/Ice Cream/Chocolate_Ice_Cream.jpg';
-import VanillaIceCream from '../assets/menu/Ice Cream/Vanilla_Ice_Cream.jpg';
-import NutsIceCream from '../assets/menu/Ice Cream/Nuts_Ice_Cream.jpg';
-import StrawberryIceCream from '../assets/menu/Ice Cream/Strawberry_Ice_Cream.jpg';
-import FruitSaladIceCream from '../assets/menu/Ice Cream/Fruit_Salad_with_Ice_Cream.jpg';
 
 /* Pasta */
 import MammaMiaSpecialSeaFoodPasta from '../assets/menu/pasta/mamma_mia_speacial_sea_food_pasta .jpg';
@@ -58,20 +52,45 @@ import NutellaWithBreadSandwich from '../assets/menu/sanwich/Nutella_With_Bread_
 import EggSandwich from '../assets/menu/sanwich/Egg_Sandwich.jpg';
 
 /* Burger */
+import CrispyChickenBurger from '../assets/menu/burger/Crispy_Chicken_Burger.jpg';
+import BeefBurger from '../assets/menu/burger/Beef_Burger.jpg';
+import ChickenHamburger from '../assets/menu/burger/Chicken_Hamburger.jpg';
+import CheeseBurger from '../assets/menu/burger/Cheese_Burger.jpg';
 
 /* Submarine */
-
-/* Submarine */
+import ChickenSubmarine from '../assets/menu/Submarines/Chicken_Submarine.jpg';
+import BeefSubmarine from '../assets/menu/Submarines/Beef_Submarine.jpg';
 
 /* Grill */
+import GrillCover from '../assets/menu/Grill/cover.jpg';
+import GrilledChicken from '../assets/menu/Grill/Grilled_Chicken.jpg';
+import GrilledBeef from '../assets/menu/Grill/Grilled_Beef.jpg';
+import MixGrilled from '../assets/menu/Grill/Mix_Grilled.jpg';
 
 /* Fish Grill */
+import FishGrillCover from '../assets/menu/Fish_Grill/cover.jpg';
+import FriedCuttlefish from '../assets/menu/Fish_Grill/Fried_Cuttlefish.jpg';
+import SeerFishGrilled from '../assets/menu/Fish_Grill/Seer_Fish_Grilled.jpg';
+import JumboPrawnsGrilled from '../assets/menu/Fish_Grill/Jumbo_Prawns_Grilled.jpg';
+import GrilledFullFish450g from '../assets/menu/Fish_Grill/Grilled_Full_Fish_(450g).jpg';
 
 /* Hot Drinks */
+import CafeEspressoItaliano from '../assets/menu/Hot_Drinks/Cafe_Espresso_Italiano.jpg';
+import Cappuccino from '../assets/menu/Hot_Drinks/Cappuccino.jpg';
+import HotChocolate from '../assets/menu/Hot_Drinks/Hot_Chocolate.jpg';
+import GreenTea from '../assets/menu/Hot_Drinks/Green_Tea.jpg';
+import LimeTea from '../assets/menu/Hot_Drinks/Lime_Tea.jpg';
+import MilkTea from '../assets/menu/Hot_Drinks/Milk_Tea.jpg';
+import SriLankanCoffee from '../assets/menu/Hot_Drinks/Sri_Lankan_Coffee.jpg';
 
 /* Beverages */
 
 /* Ice Cream */
+import ChocolateIceCream from '../assets/menu/Ice Cream/Chocolate_Ice_Cream.jpg';
+import VanillaIceCream from '../assets/menu/Ice Cream/Vanilla_Ice_Cream.jpg';
+import NutsIceCream from '../assets/menu/Ice Cream/Nuts_Ice_Cream.jpg';
+import StrawberryIceCream from '../assets/menu/Ice Cream/Strawberry_Ice_Cream.jpg';
+import FruitSaladIceCream from '../assets/menu/Ice Cream/Fruit_Salad_with_Ice_Cream.jpg';
 
 
 
@@ -79,7 +98,7 @@ const foodMenu = [
     {
         categoryId: 1,
         categoryName: "Salads",
-        categoryImage: MammaMiaSpecialSalad,
+        categoryImage: SaladCover,
         items: [
             {
                 id: 1,
@@ -366,33 +385,33 @@ const foodMenu = [
     {
         categoryId: 8,
         categoryName: "Burgers",
-        categoryImage: Image,
+        categoryImage: CrispyChickenBurger,
         items: [
             {
                 id: 35,
                 name: "Crispy Chicken Burger",
-                image: Image,
+                image: CrispyChickenBurger,
                 price: 1150.00,
                 description: "Crispy chicken patty with lettuce and sauce."
             },
             {
                 id: 36,
                 name: "Beef Burger",
-                image: Image,
+                image: BeefBurger,
                 price: 1350.00,
                 description: "Juicy beef patty with classic toppings."
             },
             {
                 id: 37,
                 name: "Chicken Hamburger",
-                image: Image,
+                image: ChickenHamburger,
                 price: 950.00,
                 description: "Chicken patty with fresh vegetables."
             },
             {
                 id: 38,
                 name: "Cheese Burger",
-                image: Image,
+                image: CheeseBurger,
                 price: 65.00,
                 description: "Simple burger with melted cheese."
             }
@@ -401,19 +420,19 @@ const foodMenu = [
     {
         categoryId: 9,
         categoryName: "Submarines",
-        categoryImage: Image,
+        categoryImage: ChickenSubmarine,
         items: [
             {
                 id: 39,
                 name: "Chicken Submarine",
-                image: Image,
+                image: ChickenSubmarine,
                 price: 1550.00,
                 description: "Chicken submarine sandwich with fresh toppings."
             },
             {
                 id: 40,
                 name: "Beef Submarine",
-                image: Image,
+                image: BeefSubmarine,
                 price: 1600.00,
                 description: "Beef submarine with French fries."
             }
@@ -422,26 +441,26 @@ const foodMenu = [
     {
         categoryId: 10,
         categoryName: "Grill",
-        categoryImage: Image,
+        categoryImage: GrillCover,
         items: [
             {
                 id: 41,
                 name: "Grilled Chicken",
-                image: Image,
+                image: GrilledChicken,
                 price: 2700.00,
                 description: "Tender grilled chicken with spices."
             },
             {
                 id: 42,
                 name: "Grilled Beef",
-                image: Image,
+                image: GrilledBeef,
                 price: 3350.00,
                 description: "Juicy grilled beef with seasonings."
             },
             {
                 id: 43,
                 name: "Mix Grilled",
-                image: Image,
+                image: MixGrilled,
                 price: 4550.00,
                 description: "Beef, chicken, seer fish, cuttlefish, prawns."
             }
@@ -450,33 +469,33 @@ const foodMenu = [
     {
         categoryId: 11,
         categoryName: "Fish Grill",
-        categoryImage: Image,
+        categoryImage: FishGrillCover,
         items: [
             {
                 id: 44,
                 name: "Seer Fish Grilled",
-                image: Image,
+                image: SeerFishGrilled,
                 price: 2200.00,
                 description: "Grilled seer fish with seasonings."
             },
             {
                 id: 45,
                 name: "Fried Cuttlefish",
-                image: Image,
+                image: FriedCuttlefish,
                 price: 1950.00,
                 description: "Crispy fried cuttlefish."
             },
             {
                 id: 46,
                 name: "Jumbo Prawns Grilled",
-                image: Image,
+                image: JumboPrawnsGrilled,
                 price: 3300.00,
                 description: "Grilled jumbo prawns with spices."
             },
             {
                 id: 47,
                 name: "Grilled Full Fish (450g)",
-                image: Image,
+                image: GrilledFullFish450g,
                 price: 3200.00,
                 description: "Whole grilled fish, 450g."
             }
@@ -485,54 +504,54 @@ const foodMenu = [
     {
         categoryId: 12,
         categoryName: "Hot Drinks",
-        categoryImage: Image,
+        categoryImage: CafeEspressoItaliano,
         items: [
             {
                 id: 48,
                 name: "Cafe Espresso Italiano",
-                image: Image,
+                image: CafeEspressoItaliano,
                 price: 450.00,
                 description: "Authentic Italian espresso."
             },
             {
                 id: 49,
                 name: "Cappuccino",
-                image: Image,
+                image: Cappuccino,
                 price: 550.00,
                 description: "Classic cappuccino with frothy milk."
             },
             {
                 id: 50,
                 name: "Hot Chocolate",
-                image: Image,
+                image: HotChocolate,
                 price: 650.00,
                 description: "Rich and creamy hot chocolate."
             },
             {
                 id: 51,
                 name: "Green Tea",
-                image: Image,
+                image: GreenTea,
                 price: 225.00,
                 description: "Refreshing green tea."
             },
             {
                 id: 52,
                 name: "Lime Tea",
-                image: Image,
+                image: LimeTea,
                 price: 220.00,
                 description: "Zesty lime-infused tea."
             },
             {
                 id: 53,
                 name: "Milk Tea",
-                image: Image,
+                image: MilkTea,
                 price: 225.00,
                 description: "Traditional milk tea."
             },
             {
                 id: 54,
                 name: "Sri Lankan Coffee",
-                image: Image,
+                image: SriLankanCoffee,
                 price: 200.00,
                 description: "Locally sourced Sri Lankan coffee."
             }

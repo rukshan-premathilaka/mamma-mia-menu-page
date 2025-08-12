@@ -25,7 +25,7 @@ export default function FoodList({ items, onSelectFood }) {
                     <img
                         src={item.image}
                         alt={item.name}
-                        className="w-full h-40 object-cover"
+                        className="w-full h-50 object-cover"
                     />
                     <div className="p-4">
                         <h3 className="font-semibold text-lg mb-1">{item.name}</h3>

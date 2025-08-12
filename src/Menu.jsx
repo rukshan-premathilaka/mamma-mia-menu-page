@@ -84,6 +84,7 @@ function Menu() {
     const handleBackToCategories = () => {
         setSelectedCategory(null);
         setView("categories");
+        window.history.pushState({ view: "categories" }, "");
     };
 
     const handleShowMenu = () => {
@@ -96,7 +97,6 @@ function Menu() {
 
     return (
         <div className="w-full h-screen flex flex-col md:flex-row font-['Inter'] overflow-x-hidden">
-
             {/* Left Side - Fixed */}
             <div className="w-full md:w-1/2 h-full bg-red-500 flex items-center justify-center p-4">
                 <Header />
@@ -104,9 +104,8 @@ function Menu() {
 
             {/* Right Side */}
             <div className="w-full md:w-1/2 flex flex-col">
-
-                {/* Search bar + Menu button */}
-                <div className="flex flex-col sm:flex-row items-center gap-3 p-4">
+                {/* Search bar + Menu button container */}
+                <div className="flex flex-col sm:flex-row items-center gap-3 px-4 pb-0 pt-4">
                     <input
                         type="text"
                         placeholder="Search food..."
@@ -160,10 +159,29 @@ function Menu() {
                         Contact Us
                     </button>
                 </div>
+                
+                {/* Back button container with padding */}
+                <div className="p-4">
+                    {view === "foods" && !showMenu && (
+                        <button
+                            onClick={handleBackToCategories}
+                            className="px-4 py-2 bg-gray-200 rounded-full hover:bg-gray-300 cursor-pointer"
+                        >
+                            ← Back to Categories
+                        </button>
+                    )}
+                    {view === "details" && selectedFood && !showMenu && (
+                        <button
+                            onClick={handleBackToFoods}
+                            className="px-4 py-2 bg-gray-200 rounded-full hover:bg-gray-300 cursor-pointer"
+                        >
+                            ← Back to {searchTerm ? "Search Results" : "Food Items"}
+                        </button>
+                    )}
+                </div>
 
-                {/* Main content area */}
-                <div className="flex-1 overflow-auto p-4">
-
+                {/* Main content area, which now scrolls independently */}
+                <div className="flex-1 overflow-auto px-4 pb-4">
                     {view === "categories" && !showMenu && (
                         <Category
                             categories={foodMenu}
@@ -171,40 +189,19 @@ function Menu() {
                             onSelectCategory={handleCategoryClick}
                         />
                     )}
-
                     {view === "foods" && !showMenu && (
-                        <>
-                            <button
-                                onClick={handleBackToCategories}
-                                className="mb-4 px-4 py-2 bg-gray-200 rounded-4xl hover:bg-gray-300 cursor-pointer"
-                            >
-                                ← Back to Categories
-                            </button>
-
-                            {displayedFoods.length === 0 ? (
-                                <p>No food items found.</p>
-                            ) : (
-                                <FoodList
-                                    items={displayedFoods}
-                                    onSelectFood={handleFoodClick}
-                                />
-                            )}
-                        </>
+                        displayedFoods.length === 0 ? (
+                            <p>No food items found.</p>
+                        ) : (
+                            <FoodList
+                                items={displayedFoods}
+                                onSelectFood={handleFoodClick}
+                            />
+                        )
                     )}
-
                     {view === "details" && selectedFood && !showMenu && (
-                        <>
-                            <button
-                                onClick={handleBackToFoods}
-                                className="mb-4 px-4 py-2 bg-gray-200 rounded-4xl hover:bg-gray-300 cursor-pointer "
-                            >
-                                ← Back to {searchTerm ? "Search Results" : "Food Items"}
-                            </button>
-
-                            <FoodDetails food={selectedFood} />
-                        </>
+                        <FoodDetails food={selectedFood} />
                     )}
-
                     {view === "restaurant" && showMenu && (
                         <RestaurantDetails
                             onClose={() => {
@@ -213,11 +210,8 @@ function Menu() {
                             }}
                         />
                     )}
-
                 </div>
-
             </div>
-
         </div>
     );
 }
