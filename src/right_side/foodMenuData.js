@@ -1,7 +1,7 @@
 import Image from '../assets/Category/fresh-vegetable-salad-with-grilled-chicken-breast.jpg';
 
 /* Salad */
-import MammaMiaSpecialSalad from '../assets/menu/salad/Mamma Mia special sal.jpg';
+import MammaMiaSpecialSalad from '../assets/menu/Salad/Mamma Mia special sald.jpg';
 import ChickenSalad from '../assets/menu/Salad/Chicken Salad.jpg';
 import PrawnsSalad from '../assets/menu/Salad/Prawns Salad.jpg';
 import OctopusSalad from '../assets/menu/Salad/Octopus Salad.jpg';
