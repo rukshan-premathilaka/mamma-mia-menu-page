@@ -51,7 +51,7 @@ import EggSandwich from '../assets/menu/sanwich/Egg_Sandwich.jpg';
 
 /* Burger */
 import CrispyChickenBurger from '../assets/menu/burger/Crispy_Chicken_Burger.jpg';
-import BeefBurger from '../assets/menu/burger/Beef_Burger.jpg';
+import BeefBurger from '../assets/menu/Burger/BeefBurger.jpg';
 import ChickenHamburger from '../assets/menu/burger/Chicken_Hamburger.jpg';
 import CheeseBurger from '../assets/menu/burger/Cheese_Burger.jpg';
 
