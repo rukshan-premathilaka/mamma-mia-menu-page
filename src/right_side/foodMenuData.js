@@ -422,7 +422,7 @@ const foodMenu = [
                 id: 38,
                 name: "Cheese Burger",
                 image: CheeseBurger,
-                price: 65.00,
+                price: 650.00,
                 description: "Simple burger with melted cheese."
             }
         ]
