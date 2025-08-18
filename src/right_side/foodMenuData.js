@@ -111,8 +111,8 @@ import FishKottu from '../assets/menu/kottu/Fish_kottu.jpg';
 import FishKottuDouble from '../assets/menu/kottu/Fish_kottu_Double.jpeg';
 import ChickenKottu from '../assets/menu/kottu/Chicken_Kottu.jpg';
 import ChickenKottuDouble from '../assets/menu/kottu/Chicken_Kottu_Double.webp';
-import PrawnKottu from '../assets/menu/kottu/Prawn kottu Rs 2150.jpg';
-import PrawnKottuDouble from '../assets/menu/kottu/Prawn_kottu_Double .jpg';
+/*import PrawnKottu from '../assets/menu/kottu/Prawn kottu Rs 2150.jpg';
+import PrawnKottuDouble from '../assets/menu/kottu/Prawn_kottu_Double .jpg';*/
 import SeafoodKottu from '../assets/menu/kottu/Seafood_kottu_Double.jpg';
 import SeafoodKottuDouble from '../assets/menu/kottu/Seafood kottu Double Rs 3650.jpeg';
 import SeafoodChickenKottu from '../assets/menu/kottu/Seafood_and_chicken_kottu.png';
@@ -717,17 +717,15 @@ const foodMenu = [
         categoryName: "Kottu",
         categoryImage: VegetablesKottu, // add image later if you have
         items: [
-            { id: 70, name: "Vegetables Kottu", price: 1100.00, description: "Fresh vegetable kottu with spices.", image: VegetablesKottu },
-            { id: 71, name: "Eggs Kottu", price: 1300.00, description: "Egg kottu with onions and spices.", image: EggsKottu },
-            { id: 72, name: "Fish Kottu", price: 1700.00, description: "Fish kottu with spices.", image: FishKottu },
-            { id: 73, name: "Fish Kottu Double", price: 2350.00, description: "Double portion fish kottu.", image: FishKottuDouble },
-            { id: 74, name: "Chicken Kottu", price: 1550.00, description: "Chicken kottu with spices.", image: ChickenKottu },
-            { id: 75, name: "Chicken Kottu Double", price: 2250.00, description: "Double portion chicken kottu.", image: ChickenKottuDouble },
-            { id: 76, name: "Prawn Kottu", price: 2150.00, description: "Prawn kottu with spices.", image: PrawnKottu },
-            { id: 77, name: "Prawn Kottu Double", price: 2850.00, description: "Double portion prawn kottu.", image: PrawnKottuDouble },
-            { id: 78, name: "Seafood Kottu", price: 2250.00, description: "Mixed seafood kottu.", image: SeafoodKottu },
-            { id: 79, name: "Seafood Kottu Double", price: 3650.00, description: "Double portion seafood kottu.", image: SeafoodKottuDouble },
-            { id: 80, name: "Seafood and Chicken Kottu", price: 2500.00, description: "Seafood and chicken mix kottu.", image: SeafoodChickenKottu },
+            { id: 70, name: "Vegetables Kottu", price: 600.00, description: "Fresh vegetable kottu with spices.", image: VegetablesKottu },
+            { id: 71, name: "Eggs Kottu", price: 800.00, description: "Egg kottu with onions and spices.", image: EggsKottu },
+            { id: 72, name: "Fish Kottu", price: 1000.00, description: "Fish kottu with spices.", image: FishKottu },
+            { id: 73, name: "Fish Kottu Large", price: 1300.00, description: "Large portion fish kottu.", image: FishKottuDouble },
+            { id: 74, name: "Chicken Kottu", price: 1200.00, description: "Chicken kottu with spices.", image: ChickenKottu },
+            { id: 75, name: "Chicken Kottu Large", price: 1500.00, description: "Large portion chicken kottu.", image: ChickenKottuDouble },
+            { id: 76, name: "Seafood Kottu", price: 1600.00, description: "Mixed seafood kottu.", image: SeafoodKottu },
+            { id: 77, name: "Seafood Kottu Large", price: 1900.00, description: "Large portion seafood kottu.", image: SeafoodKottuDouble },
+            { id: 78, name: "Seafood and Chicken Kottu", price: 2200.00, description: "Seafood and chicken mix kottu.", image: SeafoodChickenKottu },
         ]
     },
 
@@ -737,11 +735,12 @@ const foodMenu = [
         categoryName: "Rice",
         categoryImage: ChickenFriedRice,
         items: [
-            { id: 81, name: "Chicken Fried Rice", price: 1650.00, description: "Classic chicken fried rice.", image: ChickenFriedRice },
-            { id: 82, name: "Seafood Fried Rice", price: 2350.00, description: "Seafood mixed fried rice.", image: SeafoodFriedRice },
-            { id: 83, name: "Sri Lankan Rice and Curry Buffet (per person)", price: 850.00, description: "Traditional Sri Lankan buffet.", image: SriLankanRiceCurryBuffet },
-            { id: 84, name: "Rice and Curry Set Menu - Fish", price: 500.00, description: "Fish curry with rice set.", image:  RiceCurrySetMenuFish },
-            { id: 85, name: "Rice and Curry Set Menu - Chicken", price: 500.00, description: "Chicken curry with rice set.", image: RiceCurrySetMenuChicken },
+            { id: 81, name: "Chicken Fried Rice", price: 1100.00, description: "Classic chicken fried rice.", image: ChickenFriedRice },
+            { id: 82, name: "Chicken Fried Rice Large", price: 1400.00, description: "Large portion chicken fried rice.", image: ChickenFriedRice },
+            { id: 83, name: "Seafood Fried Rice", price: 1900.00, description: "Seafood mixed fried rice.", image: SeafoodFriedRice },
+            { id: 84, name: "Sri Lankan Rice and Curry Buffet (per person)", price: 850.00, description: "Traditional Sri Lankan buffet.", image: SriLankanRiceCurryBuffet },
+            { id: 85, name: "Rice and Curry Set Menu - Fish", price: 450.00, description: "Fish curry with rice set.", image: RiceCurrySetMenuFish },
+            { id: 86, name: "Rice and Curry Set Menu - Chicken", price: 500.00, description: "Chicken curry with rice set.", image: RiceCurrySetMenuChicken },
         ]
     },
 
