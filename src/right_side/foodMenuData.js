@@ -23,9 +23,9 @@ import PastaPrawnsWithBasilico from '../assets/menu/pasta/Pasta_Prawns_With_Basi
 import PastaBolognese from '../assets/menu/pasta/Pasta_Bolognese.jpg';
 
 
-/* Lasagna */
+/*/!* Lasagna *!/
 import Lasagna from '../assets/menu/lasagna/_Lasagna.jpg';
-import ParmigianadiMelanzane from '../assets/menu/lasagna/Parmigiana_di_Melanzane.jpg';
+import ParmigianadiMelanzane from '../assets/menu/lasagna/Parmigiana_di_Melanzane.jpg';*/
 
 /* Pizza */
 import MargaritaPizza10 from '../assets/menu/Pizza/Margarita_Pizza_10.jpg';
@@ -37,10 +37,10 @@ import BocconciniPizza10 from '../assets/menu/Pizza/Bocconcini_Pizza_10.jpg';
 import DoubleCheesePizzaSeafood10 from '../assets/menu/Pizza/Double_Cheese_Pizza_Seafood_10.avif';
 
 
-/* Rice */
+/*/!* Rice *!/
 import CuttlefishWithBasilicoRice from '../assets/menu/rice/Cuttlefish_With_Basilico_Rice.jpg';
 import RisottoAllaMilanese from '../assets/menu/rice/Risotto_Alla_Milanese.jpg';
-import SeafoodRice from '../assets/menu/rice/sea_food_rice.jpg';
+import SeafoodRice from '../assets/menu/rice/sea_food_rice.jpg';*/
 
 /* Sandwich */
 import MammaMiaSpecialSandwich from '../assets/menu/sanwich/Mamma_Mia_Special_Sandwich.jpg';
@@ -49,11 +49,13 @@ import VegetableSandwich from '../assets/menu/sanwich/Vegetable_Sandwich.jpg';
 import NutellaWithBreadSandwich from '../assets/menu/sanwich/Nutella_With_Bread_Sandwich.jpg';
 import EggSandwich from '../assets/menu/sanwich/Egg_Sandwich.jpg';
 
-/* Burger */
+/*
+/!* Burger *!/
 import CrispyChickenBurger from '../assets/menu/Burger/CrispyChickenBurger.jpg';
 import BeefBurger from '../assets/menu/Burger/BeefBurger.jpg';
 import ChickenHamburger from '../assets/menu/Burger/ChickenHamburger.jpg';
 import CheeseBurger from '../assets/menu/Burger/CheeseBurger.jpg';
+*/
 
 /* Submarine */
 import ChickenSubmarine from '../assets/menu/Submarines/Chicken_Submarine.jpg';
@@ -102,6 +104,29 @@ import NutsIceCream from '../assets/menu/Ice Cream/Nuts_Ice_Cream.jpg';
 import StrawberryIceCream from '../assets/menu/Ice Cream/Strawberry_Ice_Cream.jpg';
 import FruitSaladIceCream from '../assets/menu/Ice Cream/Fruit_Salad_with_Ice_Cream.jpg';
 
+/*/!* Kottu *!/
+import VegetablesKottu from '../assets/menu/kottu/Vegetables_Kottu.jpg';
+import EggsKottu from '../assets/menu/kottu/Eggs_Kottu.jpg';
+import FishKottu from '../assets/menu/kottu/Fish_Kottu.jpg';
+import FishKottuDouble from '../assets/menu/kottu/Fish_Kottu_Double.jpg';
+import ChickenKottu from '../assets/menu/kottu/Chicken_Kottu.jpg';
+import ChickenKottuDouble from '../assets/menu/kottu/Chicken_Kottu_Double.jpg';
+import PrawnKottu from '../assets/menu/kottu/Prawn_Kottu.jpg';
+import PrawnKottuDouble from '../assets/menu/kottu/Prawn_Kottu_Double.jpg';
+import SeafoodKottu from '../assets/menu/kottu/Seafood_Kottu.jpg';
+import SeafoodKottuDouble from '../assets/menu/kottu/Seafood_Kottu_Double.jpg';
+import SeafoodChickenKottu from '../assets/menu/kottu/Seafood_Chicken_Kottu.jpg';
+
+/!* New Rice *!/
+import ChickenFriedRice from '../assets/menu/rice/Chicken_Fried_Rice.jpg';
+import SeafoodFriedRice from '../assets/menu/rice/Seafood_Fried_Rice.jpg';
+import SriLankanRiceCurryBuffet from '../assets/menu/rice/Sri_Lankan_Rice_Curry_Buffet.jpg';
+import RiceCurrySetMenuFish from '../assets/menu/rice/Rice_Curry_SetMenu_Fish.jpg';
+import RiceCurrySetMenuChicken from '../assets/menu/rice/Rice_Curry_SetMenu_Chicken.jpg';
+
+/!* Hoppers *!/
+import EggHopper from '../assets/menu/hoppers/Egg_Hopper.jpg';
+import PlainHopper from '../assets/menu/hoppers/Plain_Hopper.jpg';*/
 
 
 const foodMenu = [
@@ -245,7 +270,7 @@ const foodMenu = [
             }
         ]
     },
-    {
+    /*{
         categoryId: 4,
         categoryName: "Lasagna",
         categoryImage: Lasagna,
@@ -265,7 +290,7 @@ const foodMenu = [
                 description: "Beef, tomato sauce, red wine."
             }
         ]
-    },
+    },*/
     {
         categoryId: 5,
         categoryName: "Pizza",
@@ -322,7 +347,7 @@ const foodMenu = [
             }
         ]
     },
-    {
+    /*{
         categoryId: 6,
         categoryName: "Rice",
         categoryImage: RisottoAllaMilanese,
@@ -349,7 +374,7 @@ const foodMenu = [
                 description: "Seer fish, cuttlefish, prawns, rice, olive, cuppari."
             }
         ]
-    },
+    },*/
     {
         categoryId: 7,
         categoryName: "Sandwiches",
@@ -392,7 +417,7 @@ const foodMenu = [
             }
         ]
     },
-    {
+    /*{
         categoryId: 8,
         categoryName: "Burgers",
         categoryImage: CrispyChickenBurger,
@@ -426,7 +451,7 @@ const foodMenu = [
                 description: "Simple burger with melted cheese."
             }
         ]
-    },
+    },*/
     {
         categoryId: 9,
         categoryName: "Submarines",
@@ -684,6 +709,49 @@ const foodMenu = [
                 price: 650.00,
                 description: "Fresh fruit salad with ice cream."
             }
+        ]
+    },
+    {
+        categoryId: 15,
+        categoryName: "Kottu",
+        categoryImage: null, // add image later if you have
+        items: [
+            { id: 70, name: "Vegetables Kottu", price: 1100.00, description: "Fresh vegetable kottu with spices.", image: null },
+            { id: 71, name: "Eggs Kottu", price: 1300.00, description: "Egg kottu with onions and spices.", image: null },
+            { id: 72, name: "Fish Kottu", price: 1700.00, description: "Fish kottu with spices.", image: null },
+            { id: 73, name: "Fish Kottu Double", price: 2350.00, description: "Double portion fish kottu.", image: null },
+            { id: 74, name: "Chicken Kottu", price: 1550.00, description: "Chicken kottu with spices.", image: null },
+            { id: 75, name: "Chicken Kottu Double", price: 2250.00, description: "Double portion chicken kottu.", image: null },
+            { id: 76, name: "Prawn Kottu", price: 2150.00, description: "Prawn kottu with spices.", image: null },
+            { id: 77, name: "Prawn Kottu Double", price: 2850.00, description: "Double portion prawn kottu.", image: null },
+            { id: 78, name: "Seafood Kottu", price: 2250.00, description: "Mixed seafood kottu.", image: null },
+            { id: 79, name: "Seafood Kottu Double", price: 3650.00, description: "Double portion seafood kottu.", image: null },
+            { id: 80, name: "Seafood and Chicken Kottu", price: 2500.00, description: "Seafood and chicken mix kottu.", image: null }
+        ]
+    },
+
+    // ✅ Re-added Rice with new items
+    {
+        categoryId: 16,
+        categoryName: "Rice",
+        categoryImage: null,
+        items: [
+            { id: 81, name: "Chicken Fried Rice", price: 1650.00, description: "Classic chicken fried rice.", image: null },
+            { id: 82, name: "Seafood Fried Rice", price: 2350.00, description: "Seafood mixed fried rice.", image: null },
+            { id: 83, name: "Sri Lankan Rice and Curry Buffet (per person)", price: 850.00, description: "Traditional Sri Lankan buffet.", image: null },
+            { id: 84, name: "Rice and Curry Set Menu - Fish", price: 500.00, description: "Fish curry with rice set.", image: null },
+            { id: 85, name: "Rice and Curry Set Menu - Chicken", price: 500.00, description: "Chicken curry with rice set.", image: null }
+        ]
+    },
+
+    // ✅ New Hoppers Category
+    {
+        categoryId: 17,
+        categoryName: "Hoppers",
+        categoryImage: null,
+        items: [
+            { id: 86, name: "Egg Hopper", price: 140.00, description: "Crispy hopper with egg.", image: null },
+            { id: 87, name: "Plain Hopper", price: 120.00, description: "Crispy plain hopper.", image: null }
         ]
     }
 ];
