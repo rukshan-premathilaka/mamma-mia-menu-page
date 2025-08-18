@@ -104,29 +104,30 @@ import NutsIceCream from '../assets/menu/Ice Cream/Nuts_Ice_Cream.jpg';
 import StrawberryIceCream from '../assets/menu/Ice Cream/Strawberry_Ice_Cream.jpg';
 import FruitSaladIceCream from '../assets/menu/Ice Cream/Fruit_Salad_with_Ice_Cream.jpg';
 
-/*/!* Kottu *!/
-import VegetablesKottu from '../assets/menu/kottu/Vegetables_Kottu.jpg';
-import EggsKottu from '../assets/menu/kottu/Eggs_Kottu.jpg';
-import FishKottu from '../assets/menu/kottu/Fish_Kottu.jpg';
-import FishKottuDouble from '../assets/menu/kottu/Fish_Kottu_Double.jpg';
+/* Kottu */
+import VegetablesKottu from '../assets/menu/kottu/Vegetables_kottu_Rs_1100.webp';
+import EggsKottu from '../assets/menu/kottu/Eggs_kottu.jpg';
+import FishKottu from '../assets/menu/kottu/Fish_kottu.jpg';
+import FishKottuDouble from '../assets/menu/kottu/Fish_kottu_Double.jpeg';
 import ChickenKottu from '../assets/menu/kottu/Chicken_Kottu.jpg';
-import ChickenKottuDouble from '../assets/menu/kottu/Chicken_Kottu_Double.jpg';
-import PrawnKottu from '../assets/menu/kottu/Prawn_Kottu.jpg';
-import PrawnKottuDouble from '../assets/menu/kottu/Prawn_Kottu_Double.jpg';
-import SeafoodKottu from '../assets/menu/kottu/Seafood_Kottu.jpg';
-import SeafoodKottuDouble from '../assets/menu/kottu/Seafood_Kottu_Double.jpg';
-import SeafoodChickenKottu from '../assets/menu/kottu/Seafood_Chicken_Kottu.jpg';
+import ChickenKottuDouble from '../assets/menu/kottu/Chicken_Kottu_Double.webp';
+import PrawnKottu from '../assets/menu/kottu/Prawn kottu Rs 2150.jpg';
+import PrawnKottuDouble from '../assets/menu/kottu/Prawn_kottu_Double .jpg';
+import SeafoodKottu from '../assets/menu/kottu/Seafood_kottu_Double.jpg';
+import SeafoodKottuDouble from '../assets/menu/kottu/Seafood kottu Double Rs 3650.jpeg';
+import SeafoodChickenKottu from '../assets/menu/kottu/Seafood_and_chicken_kottu.png';
 
-/!* New Rice *!/
+/* New Rice */
 import ChickenFriedRice from '../assets/menu/rice/Chicken_Fried_Rice.jpg';
 import SeafoodFriedRice from '../assets/menu/rice/Seafood_Fried_Rice.jpg';
-import SriLankanRiceCurryBuffet from '../assets/menu/rice/Sri_Lankan_Rice_Curry_Buffet.jpg';
-import RiceCurrySetMenuFish from '../assets/menu/rice/Rice_Curry_SetMenu_Fish.jpg';
+import SriLankanRiceCurryBuffet from '../assets/menu/rice/Sri_Lankan_Rice_Curry_Buffet.webp';
+import RiceCurrySetMenuFish from '../assets/menu/rice/Rice_Curry_SetMenu_Fish.png';
 import RiceCurrySetMenuChicken from '../assets/menu/rice/Rice_Curry_SetMenu_Chicken.jpg';
 
-/!* Hoppers *!/
-import EggHopper from '../assets/menu/hoppers/Egg_Hopper.jpg';
-import PlainHopper from '../assets/menu/hoppers/Plain_Hopper.jpg';*/
+
+/* Hoppers */
+import EggHopper from '../assets/menu/hoppers/Egg_hopper.jpg';
+import PlainHopper from '../assets/menu/hoppers/Plain_hopper.jpg';
 
 
 const foodMenu = [
@@ -714,19 +715,19 @@ const foodMenu = [
     {
         categoryId: 15,
         categoryName: "Kottu",
-        categoryImage: null, // add image later if you have
+        categoryImage: VegetablesKottu, // add image later if you have
         items: [
-            { id: 70, name: "Vegetables Kottu", price: 1100.00, description: "Fresh vegetable kottu with spices.", image: null },
-            { id: 71, name: "Eggs Kottu", price: 1300.00, description: "Egg kottu with onions and spices.", image: null },
-            { id: 72, name: "Fish Kottu", price: 1700.00, description: "Fish kottu with spices.", image: null },
-            { id: 73, name: "Fish Kottu Double", price: 2350.00, description: "Double portion fish kottu.", image: null },
-            { id: 74, name: "Chicken Kottu", price: 1550.00, description: "Chicken kottu with spices.", image: null },
-            { id: 75, name: "Chicken Kottu Double", price: 2250.00, description: "Double portion chicken kottu.", image: null },
-            { id: 76, name: "Prawn Kottu", price: 2150.00, description: "Prawn kottu with spices.", image: null },
-            { id: 77, name: "Prawn Kottu Double", price: 2850.00, description: "Double portion prawn kottu.", image: null },
-            { id: 78, name: "Seafood Kottu", price: 2250.00, description: "Mixed seafood kottu.", image: null },
-            { id: 79, name: "Seafood Kottu Double", price: 3650.00, description: "Double portion seafood kottu.", image: null },
-            { id: 80, name: "Seafood and Chicken Kottu", price: 2500.00, description: "Seafood and chicken mix kottu.", image: null }
+            { id: 70, name: "Vegetables Kottu", price: 1100.00, description: "Fresh vegetable kottu with spices.", image: VegetablesKottu },
+            { id: 71, name: "Eggs Kottu", price: 1300.00, description: "Egg kottu with onions and spices.", image: EggsKottu },
+            { id: 72, name: "Fish Kottu", price: 1700.00, description: "Fish kottu with spices.", image: FishKottu },
+            { id: 73, name: "Fish Kottu Double", price: 2350.00, description: "Double portion fish kottu.", image: FishKottuDouble },
+            { id: 74, name: "Chicken Kottu", price: 1550.00, description: "Chicken kottu with spices.", image: ChickenKottu },
+            { id: 75, name: "Chicken Kottu Double", price: 2250.00, description: "Double portion chicken kottu.", image: ChickenKottuDouble },
+            { id: 76, name: "Prawn Kottu", price: 2150.00, description: "Prawn kottu with spices.", image: PrawnKottu },
+            { id: 77, name: "Prawn Kottu Double", price: 2850.00, description: "Double portion prawn kottu.", image: PrawnKottuDouble },
+            { id: 78, name: "Seafood Kottu", price: 2250.00, description: "Mixed seafood kottu.", image: SeafoodKottu },
+            { id: 79, name: "Seafood Kottu Double", price: 3650.00, description: "Double portion seafood kottu.", image: SeafoodKottuDouble },
+            { id: 80, name: "Seafood and Chicken Kottu", price: 2500.00, description: "Seafood and chicken mix kottu.", image: SeafoodChickenKottu },
         ]
     },
 
@@ -734,13 +735,13 @@ const foodMenu = [
     {
         categoryId: 16,
         categoryName: "Rice",
-        categoryImage: null,
+        categoryImage: ChickenFriedRice,
         items: [
-            { id: 81, name: "Chicken Fried Rice", price: 1650.00, description: "Classic chicken fried rice.", image: null },
-            { id: 82, name: "Seafood Fried Rice", price: 2350.00, description: "Seafood mixed fried rice.", image: null },
-            { id: 83, name: "Sri Lankan Rice and Curry Buffet (per person)", price: 850.00, description: "Traditional Sri Lankan buffet.", image: null },
-            { id: 84, name: "Rice and Curry Set Menu - Fish", price: 500.00, description: "Fish curry with rice set.", image: null },
-            { id: 85, name: "Rice and Curry Set Menu - Chicken", price: 500.00, description: "Chicken curry with rice set.", image: null }
+            { id: 81, name: "Chicken Fried Rice", price: 1650.00, description: "Classic chicken fried rice.", image: ChickenFriedRice },
+            { id: 82, name: "Seafood Fried Rice", price: 2350.00, description: "Seafood mixed fried rice.", image: SeafoodFriedRice },
+            { id: 83, name: "Sri Lankan Rice and Curry Buffet (per person)", price: 850.00, description: "Traditional Sri Lankan buffet.", image: SriLankanRiceCurryBuffet },
+            { id: 84, name: "Rice and Curry Set Menu - Fish", price: 500.00, description: "Fish curry with rice set.", image:  RiceCurrySetMenuFish },
+            { id: 85, name: "Rice and Curry Set Menu - Chicken", price: 500.00, description: "Chicken curry with rice set.", image: RiceCurrySetMenuChicken },
         ]
     },
 
@@ -748,10 +749,10 @@ const foodMenu = [
     {
         categoryId: 17,
         categoryName: "Hoppers",
-        categoryImage: null,
+        categoryImage: EggHopper,
         items: [
-            { id: 86, name: "Egg Hopper", price: 140.00, description: "Crispy hopper with egg.", image: null },
-            { id: 87, name: "Plain Hopper", price: 120.00, description: "Crispy plain hopper.", image: null }
+            { id: 86, name: "Egg Hopper", price: 140.00, description: "Crispy hopper with egg.", image: EggHopper },
+            { id: 87, name: "Plain Hopper", price: 120.00, description: "Crispy plain hopper.", image: PlainHopper },
         ]
     }
 ];
